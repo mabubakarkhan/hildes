@@ -602,6 +602,54 @@ img:not(.is-lazy) {
   }
 }
 
+/* Desktop (≥992px): home hero slider fills viewport below header; <992px keeps theme heights */
+@media only screen and (min-width: 992px) {
+  .banner-swiper-two {
+    --hildes-hero-header-offset: 158px;
+  }
+
+  .banner-swiper-two,
+  .banner-swiper-two .mySwiper-banner-two,
+  .banner-swiper-two .mySwiper-banner-two .swiper-wrapper,
+  .banner-swiper-two .mySwiper-banner-two .swiper-slide {
+    height: calc(100vh - var(--hildes-hero-header-offset));
+    min-height: calc(100dvh - var(--hildes-hero-header-offset));
+  }
+
+  @supports (height: 100svh) {
+    .banner-swiper-two,
+    .banner-swiper-two .mySwiper-banner-two,
+    .banner-swiper-two .mySwiper-banner-two .swiper-wrapper,
+    .banner-swiper-two .mySwiper-banner-two .swiper-slide {
+      height: calc(100svh - var(--hildes-hero-header-offset));
+      min-height: calc(100svh - var(--hildes-hero-header-offset));
+    }
+  }
+
+  .banner-swiper-two .mySwiper-banner-two .swiper-slide {
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  .banner-swiper-two .rts-banner-area-two {
+    flex: 1 1 auto;
+    align-self: stretch;
+    width: 100%;
+    min-height: 100% !important;
+    height: auto !important;
+  }
+
+  .mySwiper-banner-two .swiper-button-prev {
+    left: 10px;
+    right: auto;
+  }
+
+  .mySwiper-banner-two .swiper-button-next {
+    right: 10px;
+    left: auto;
+  }
+}
+
 /* Homepage stats row: FA icons in theme’s white circle (replaces SVG imgs) */
 .counter-bg .single-counter .icon i {
   font-size: 32px;
