@@ -1,0 +1,2848 @@
+img.is-lazy {
+  opacity: 0.01;
+  transition: opacity 0.3s ease;
+}
+
+.hildes-services-cms-detail {
+  margin-top: -70px;
+  margin-bottom: 60px;
+}
+
+.hildes-services-faq-block {
+  margin-top: -45px;
+}
+
+.about-page-case-studies-gap {
+  margin-top: 56px;
+}
+
+.about-page-db-detail {
+  padding: 30px 0 10px;
+}
+
+.about-page-db-intro {
+  max-width: 980px;
+  margin: 0 auto 26px;
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+  border: 1px solid #e8edf6;
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-page-db-intro p {
+  margin: 0 0 12px;
+  color: #44526b;
+  line-height: 1.75;
+}
+
+.about-page-db-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.about-page-db-intro::after {
+  content: "\f1ad";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 300;
+  position: absolute;
+  right: 30px;
+  top: 18px;
+  font-size: 92px;
+  color: rgba(95, 130, 255, 0.12);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.about-page-db-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.about-page-db-card {
+  background: linear-gradient(180deg, #ffffff, #fbfcff);
+  border: 1px solid #e8edf6;
+  border-radius: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+  position: relative;
+  overflow: hidden;
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+
+.about-page-db-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff8a2a, #ffb067);
+  opacity: .7;
+}
+
+.about-page-db-card::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(90, 140, 255, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.about-page-db-card:hover {
+  transform: translateY(-4px);
+  border-color: #dbe5f3;
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.1);
+}
+
+.about-page-db-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.about-page-db-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff5eb;
+  color: #ff8a2a;
+  border: 1px solid #ffe3c4;
+  box-shadow: 0 4px 12px rgba(255, 138, 42, 0.15);
+}
+
+.about-page-db-icon i {
+  font-size: 20px;
+}
+
+.about-page-db-card--our-approach-to-building-software .about-page-db-icon,
+.about-page-db-card--our-vision .about-page-db-icon {
+  background: #eef5ff;
+  color: #4f83ff;
+  border-color: #dbe8ff;
+  box-shadow: 0 4px 12px rgba(79, 131, 255, 0.15);
+}
+
+.about-page-db-card--our-approach-to-building-software::before,
+.about-page-db-card--our-vision::before {
+  background: linear-gradient(90deg, #4f83ff, #88aaff);
+}
+
+.about-page-db-card h3 {
+  margin: 0 0 10px;
+  font-size: 36px;
+  color: #111827;
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-db-card-content p {
+  margin: 0 0 10px;
+  color: #46556e;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-db-card-content ul,
+.about-page-db-card-content ol {
+  margin: 10px 0 0 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-db-card-content li {
+  margin-bottom: 6px;
+  color: #46556e;
+  line-height: 1.65;
+}
+
+.about-page-db-cta {
+  grid-column: 1 / -1;
+  background: linear-gradient(180deg, #ffffff, #fbfcff);
+  border: 1px solid #e8edf6;
+  border-radius: 16px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-page-db-cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff8a2a, #ffb067);
+  opacity: .7;
+}
+
+.about-page-db-cta-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-db-cta h3 {
+  margin: 0 0 6px;
+  font-size: 34px;
+  color: #111827;
+}
+
+.about-page-db-cta-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-page-db-cta-actions .rts-btn.btn-border {
+  background: #fff;
+  color: #1f2937;
+  border: 1px solid #d7dfec;
+}
+
+.about-page-db-cta-actions .rts-btn.btn-border:hover {
+  background: #f6f9ff;
+  border-color: #c5d3ea;
+}
+
+.about-page-db-card--our-expertise .about-page-db-card-content ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-page-db-card--our-expertise .about-page-db-card-content li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.about-page-db-card--our-expertise .about-page-db-card-content li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  background: #ff9a37;
+}
+
+.about-page-db-card--our-approach-to-building-software .about-page-db-card-content ol {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: aboutStep;
+}
+
+.about-page-db-card--our-approach-to-building-software .about-page-db-card-content ol li {
+  counter-increment: aboutStep;
+  position: relative;
+  padding-left: 32px;
+}
+
+.about-page-db-card--our-approach-to-building-software .about-page-db-card-content ol li::before {
+  content: counter(aboutStep);
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #4f83ff;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.about-page-db-card--why-businesses-choose-hildes .about-page-db-card-content ul {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-page-db-card--why-businesses-choose-hildes .about-page-db-card-content li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.about-page-db-card--why-businesses-choose-hildes .about-page-db-card-content li::before {
+  content: "\f058";
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  color: #ff9a37;
+  font-size: 12px;
+}
+
+.faqs-page-detail {
+  padding: 28px 0 10px;
+}
+
+.faqs-page-detail-card {
+  max-width: 980px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #ffffff, #f7faff);
+  border: 1px solid #e8edf6;
+  border-radius: 18px;
+  padding: 24px 26px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+.faqs-page-detail-card h2,
+.faqs-page-detail-card h3 {
+  color: #0f172a;
+  margin: 0 0 10px;
+}
+
+.faqs-page-detail-card p {
+  color: #44526b;
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.faqs-group-tabs-wrap {
+  margin-top: 10px;
+}
+
+.faqs-group-tabs {
+  background: linear-gradient(180deg, #ffffff, #f9fbff);
+  border: 1px solid #e9edf6;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.faqs-group-tab-buttons {
+  flex: 0 0 260px;
+  width: 260px;
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faqs-group-panels {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.faqs-group-tab-btn {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #344256;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 16px;
+  line-height: 1.2;
+  width: 100%;
+  text-align: left;
+  transition: all .2s ease;
+}
+
+.faqs-group-tab-btn:hover {
+  border-color: #ff7a00;
+  color: #ff7a00;
+}
+
+.faqs-group-tab-btn.is-active {
+  background: linear-gradient(90deg, #ff7a00, #ff9a46);
+  border-color: #ff7a00;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(255, 122, 0, 0.25);
+}
+
+.faqs-group-panel {
+  display: none;
+  width: 100%;
+  min-width: 0;
+}
+
+.faqs-group-panel.is-active {
+  display: block;
+}
+
+.cms-page-detail-block {
+  margin-bottom: 34px;
+}
+
+.cms-page-faq-block {
+  margin-top: -78px;
+}
+
+@media (min-width: 992px) {
+  .cms-page-detail-block {
+    margin-bottom: 24px;
+  }
+
+  .cms-page-detail-block + .cms-page-faq-block {
+    margin-top: -12px;
+  }
+
+  .cms-page-detail-block.hildes-services-cms-detail {
+    margin-bottom: 24px !important;
+  }
+
+  .cms-page-faq-block.hildes-services-faq-block {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .faqs-page-detail-card {
+    padding: 20px 18px;
+  }
+
+  .faqs-group-tabs {
+    display: block;
+    padding: 14px;
+  }
+
+  .faqs-group-tab-buttons {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-page-db-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page-db-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-page-db-cta-actions {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .about-page-db-card h3 {
+    font-size: 36px;
+  }
+
+  .about-page-db-cta h3 {
+    font-size: 34px;
+  }
+
+  .about-page-db-intro::after {
+    font-size: 72px;
+    right: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-page-view {
+    margin-bottom: 0;
+  }
+
+  .contact-page-last-section {
+    margin-bottom: 300px;
+  }
+
+  .about-page-case-studies-gap {
+    margin-top: 250px;
+  }
+
+  .about-page-faq-block {
+    margin-bottom: 300px;
+  }
+
+  .faqs-page-last-section {
+    margin-bottom: 300px;
+  }
+
+  .cms-page-last-section {
+    margin-bottom: 300px;
+  }
+}
+
+.hildes-services-cms-card {
+  background: linear-gradient(180deg, #ffffff, #f7f9ff);
+  border: 1px solid #e9edf6;
+  border-radius: 20px;
+  padding: 34px 34px 28px;
+  box-shadow: 0 16px 36px rgba(26, 41, 75, 0.08);
+}
+
+.hildes-services-cms-card h2,
+.hildes-services-cms-card h3,
+.hildes-services-cms-card h4 {
+  color: #0f172a;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.hildes-services-cms-card h3,
+.hildes-services-cms-card h4 {
+  margin-top: 20px;
+}
+
+.hildes-services-cms-card p {
+  color: #36455f;
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
+.hildes-services-cms-card ul,
+.hildes-services-cms-card ol {
+  margin: 12px 0 16px 20px;
+  color: #36455f;
+}
+
+.hildes-services-cms-card li {
+  margin-bottom: 8px;
+  line-height: 1.65;
+}
+
+@media (max-width: 767px) {
+  .hildes-services-cms-card {
+    padding: 24px 20px 20px;
+    border-radius: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hildes-services-cms-detail {
+    margin-bottom: 350px;
+  }
+}
+
+img:not(.is-lazy) {
+  opacity: 1;
+}
+
+/* Homepage hero: left-align captions only (swiper, shapes, animations unchanged) */
+.banner-swiper-two .banner-inner-two-content {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.banner-swiper-two .banner-inner-two-content .rts-btn {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.banner-swiper-two .banner-inner-two-content p.disc {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Small-device hero image: same DOM as stock — only CSS vars swap bg at ≤767px (no layers / overflow hacks) */
+.banner-swiper-two .home-hero-slide-bg--dual,
+.banner-swiper-two .home-hero-slide-bg--dual.rts-banner-area-two.two,
+.banner-swiper-two .home-hero-slide-bg--dual.rts-banner-area-two.three {
+  background-image: var(--hero-bg-desktop) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .banner-swiper-two .home-hero-slide-bg--dual,
+  .banner-swiper-two .home-hero-slide-bg--dual.rts-banner-area-two.two,
+  .banner-swiper-two .home-hero-slide-bg--dual.rts-banner-area-two.three {
+    background-image: var(--hero-bg-mobile) !important;
+  }
+
+  /* Hero slider only: hide pre-title + description; keep title, button, shapes (outside this block) */
+  .banner-swiper-two .swiper-slide .banner-inner-two-content > .pre-title,
+  .banner-swiper-two .swiper-slide .banner-inner-two-content > p.disc {
+    display: none !important;
+  }
+
+  /* Title + button block ~50px above bottom (safe area); shapes stay in same stacking context */
+  .banner-swiper-two .rts-banner-area-two {
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-bottom: calc(50px + env(safe-area-inset-bottom, 0px));
+    padding-top: clamp(0.5rem, 2vh, 1.25rem);
+  }
+
+  .banner-swiper-two .rts-banner-area-two > .container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+/* Homepage stats row: FA icons in theme’s white circle (replaces SVG imgs) */
+.counter-bg .single-counter .icon i {
+  font-size: 32px;
+  color: #1c2539;
+  line-height: 1;
+}
+
+/* Shared “Grow your business…” CTA + about block service links (homepage + about) */
+.hildes-grow-business-cta-wrap .cta-style-two-area .title {
+  font-size: 26px;
+  line-height: 1.35;
+}
+
+@media only screen and (min-width: 992px) {
+  .hildes-grow-business-cta-wrap .cta-style-two-area .title {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hildes-grow-business-cta-wrap .cta-style-two-area .title {
+    font-size: 22px;
+  }
+
+  .hildes-grow-business-cta-wrap .cta-style-two-area .title br {
+    display: none;
+  }
+}
+
+.hildes-grow-business-cta-wrap .cta-style-two-area .title a.hildes-grow-cta-link {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.hildes-grow-business-cta-wrap .cta-style-two-area .title a.hildes-grow-cta-link:visited,
+.hildes-grow-business-cta-wrap .cta-style-two-area .title a.hildes-grow-cta-link:hover,
+.hildes-grow-business-cta-wrap .cta-style-two-area .title a.hildes-grow-cta-link:active {
+  color: #ffffff !important;
+}
+
+/* Avoid line breaks splitting “…and tech talent.” (shared CTA — home & about) */
+.hildes-grow-business-cta-wrap .cta-style-two-area .title .hildes-grow-cta-tail {
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 479px) {
+  .hildes-grow-business-cta-wrap .cta-style-two-area .title .hildes-grow-cta-tail {
+    white-space: normal;
+  }
+}
+
+.hildes-about-area-service-links .disc.hildes-about-intro-disc {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.hildes-about-area-service-links a.hildes-service-inline-link {
+  color: #000000 !important;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Keep uploaded logo proportional by width only */
+.header-main-one-wrapper .thumbnail a img,
+.rts-sidebar-menu-desktop .logo-1 img.logo {
+  width: 70px;
+  height: auto;
+  max-width: 100%;
+}
+
+.header-main-one-wrapper .thumbnail a,
+.rts-sidebar-menu-desktop .logo-1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Floating lead/contact buttons */
+.hildes-floating-actions {
+  position: fixed;
+  right: 31px;
+  bottom: 86px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hildes-floating-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  min-width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  color: #111111;
+  border: 1.5px solid #eeeeee;
+  background: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.26s ease, box-shadow 0.26s ease, background-color 0.26s ease, color 0.26s ease, border-color 0.26s ease;
+}
+
+.hildes-floating-action i {
+  font-size: 17px;
+  line-height: 1;
+  transition: transform 0.26s ease;
+}
+
+.hildes-floating-action.is-whatsapp {
+  background: #ffffff;
+}
+
+.hildes-floating-action.is-call {
+  background: #ffffff;
+}
+
+.hildes-floating-action.is-email {
+  background: #ffffff;
+}
+
+.hildes-floating-action:hover {
+  color: #ffffff;
+  background: #111111;
+  border-color: #111111;
+  transform: translateY(-2px) scale(1.06);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.26);
+}
+
+.hildes-floating-action:hover i {
+  transform: rotate(-8deg) scale(1.07);
+}
+
+@media (max-width: 767px) {
+  .hildes-floating-actions {
+    right: 31px;
+    bottom: 74px;
+    gap: 8px;
+  }
+
+  .hildes-floating-action {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+  }
+}
+
+/* Disable old RTL switcher if cached template still renders it */
+.rtl-ltr-switcher-btn {
+  display: none !important;
+}
+
+.hildes-search-suggestions {
+  position: absolute;
+  left: 0;
+  width: calc(100% - 54px);
+  right: auto;
+  top: calc(100% + 8px);
+  background: #fff;
+  border: 1px solid #e6eaf2;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(22, 31, 54, 0.14);
+  max-height: 360px;
+  overflow-y: auto;
+  z-index: 30;
+  display: none;
+}
+
+.hildes-search-suggestions.is-open {
+  display: block;
+}
+
+.hildes-search-item {
+  display: block;
+  padding: 11px 14px;
+  border-bottom: 1px solid #f1f4f9;
+  text-decoration: none;
+}
+
+.hildes-search-item:last-child {
+  border-bottom: 0;
+}
+
+.hildes-search-item:hover,
+.hildes-search-item.is-active {
+  background: #f7faff;
+}
+
+.hildes-search-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hildes-search-item-title {
+  color: #1c2539;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.hildes-search-item-title mark,
+.hildes-search-item-summary mark {
+  background: #111111;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+.hildes-search-item-type {
+  font-size: 11px;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  color: #ffffff;
+  background: #ff7a00;
+  border: 1px solid #ff7a00;
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(17, 17, 17, 0.12);
+}
+
+.hildes-search-item-type::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 6px;
+  background: currentColor;
+  opacity: 1;
+}
+
+.hildes-search-item-type {
+  display: inline-flex;
+  align-items: center;
+}
+
+.hildes-search-item .hildes-search-item-type {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.hildes-search-item:hover .hildes-search-item-type {
+  transform: translateY(-1px);
+  filter: saturate(1.05);
+}
+
+.hildes-search-item-type[data-type="service"] {
+  background: #ff7a00;
+  border-color: #ff7a00;
+  color: #ffffff;
+}
+
+.hildes-search-item-type[data-type="case study"] {
+  background: #111111;
+  border-color: #111111;
+  color: #ffffff;
+}
+
+.search-input-area .search-input-inner .input-div {
+  position: relative;
+}
+
+.search-input-area .search-input-inner .input-div #site-search-input {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 575px) {
+  .hildes-search-suggestions {
+    width: calc(100% - 52px);
+  }
+}
+
+.hildes-search-item-summary {
+  margin-top: 4px;
+  color: #5f6e85;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.hildes-search-empty {
+  padding: 12px 14px;
+  color: #7f8b9e;
+  font-size: 13px;
+}
+
+.contact-page-view {
+  margin-bottom: 400px;
+}
+
+/* Contact page: remove theme overlap and keep clean gap under hero */
+.contact-page-view .rts-contact-area-in-page {
+  margin-top: 60px;
+}
+
+.contact-page-view .contact-form-p {
+  margin-left: 0;
+}
+
+.contact-page-view .contact-info-area-wrapper-p .single-contact-info .icon {
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
+}
+
+.contact-page-view .contact-info-area-wrapper-p .single-contact-info .icon i {
+  font-size: 20px;
+  color: #1f2937;
+  line-height: 1;
+}
+
+/* Case studies listing: simple 2-column cards, no overlap */
+.case-studies-index-section {
+  padding-top: 28px;
+}
+
+.case-study-index-card {
+  background: #fff;
+  border: 1px solid #eceff4;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.26s ease, box-shadow 0.26s ease, border-color 0.26s ease;
+}
+
+.case-study-index-card .thumbnail {
+  display: block;
+}
+
+.case-study-index-card .thumbnail img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.32s ease;
+}
+
+.case-study-index-content {
+  padding: 20px 22px 22px;
+}
+
+.case-study-index-content .title {
+  margin: 0 0 8px;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.case-study-index-content .title a {
+  color: #1c2539;
+}
+
+.case-study-index-content p {
+  margin: 0 0 14px;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Trusted clients infinite marquee */
+.hildes-clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 4px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hildes-clients-track {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  animation: hildesClientsMarquee 34s linear infinite;
+  will-change: transform;
+}
+
+.hildes-clients-marquee:hover .hildes-clients-track {
+  animation-play-state: paused;
+}
+
+.hildes-clients-group {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-right: 18px;
+}
+
+.hildes-client-pill {
+  width: 180px;
+  height: 72px;
+  border-radius: 12px;
+  border: 1px solid rgba(28, 37, 57, 0.08);
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+  transform: skewX(-7deg);
+}
+
+.hildes-client-pill img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: skewX(7deg);
+}
+
+.hildes-client-pill:hover {
+  transform: skewX(-7deg) translateY(-2px);
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.14);
+}
+
+@keyframes hildesClientsMarquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .hildes-client-pill {
+    width: 146px;
+    height: 60px;
+    border-radius: 10px;
+  }
+
+  .hildes-clients-group {
+    gap: 12px;
+    padding-right: 12px;
+  }
+
+  .hildes-clients-track {
+    animation-duration: 26s;
+  }
+}
+
+.case-study-index-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(28, 37, 57, 0.16);
+  box-shadow: 0 18px 38px rgba(16, 24, 40, 0.14);
+}
+
+.case-study-index-card:hover .thumbnail img {
+  transform: scale(1.035);
+}
+
+@media (min-width: 992px) {
+  .case-studies-index-section {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .case-study-index-card .thumbnail img {
+    height: 220px;
+  }
+}
+
+.hildes-brand-text {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  color: #1c2539;
+}
+
+.hildes-about-small-image {
+  border-radius: 10px;
+  box-shadow:
+    -14px 0 28px rgba(0, 0, 0, 0.48),
+    14px 0 28px rgba(0, 0, 0, 0.48),
+    0 -14px 28px rgba(0, 0, 0, 0.42),
+    0 14px 28px rgba(0, 0, 0, 0.42);
+  cursor: crosshair;
+  transition:
+    box-shadow 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: box-shadow, transform;
+}
+
+.hildes-about-small-image:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    -20px 0 48px rgba(0, 0, 0, 0.22),
+    20px 0 48px rgba(0, 0, 0, 0.22),
+    0 -20px 48px rgba(0, 0, 0, 0.18),
+    0 20px 48px rgba(0, 0, 0, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hildes-about-small-image,
+  .hildes-about-small-image:hover {
+    transition: none;
+    transform: none;
+  }
+}
+
+.hildes-signature-text {
+  display: inline-block;
+  font-family: "Segoe Script", "Brush Script MT", "Lucida Handwriting", cursive;
+  font-size: 25px;
+  line-height: 1;
+  color: #1c2539;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-legal-wrap {
+  margin: 0;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-brand-line {
+  margin: 0 0 6px;
+  font-size: 18px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-tagline {
+  margin: 0 0 1px;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  opacity: 0.92;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-legal-social {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.social-wrapper-one li a {
+  color: #fff;
+  /* margin-right: 20px; */
+  padding: 11px 0;
+}
+
+/* Header + Contact Us column: not the dark copyright bar — keep links visible */
+.header-one .social-wrapper-one li a,
+.map-information-2-footer .social-wrapper-one li a {
+  color: #1c2539;
+  padding: 0;
+}
+
+/* Footer tagline row: white icons, no circles, tight spacing */
+.footer-two .rts-copyright-area .hildes-footer-legal-social.hildes-social-pills--legal-strip {
+  gap: 4px;
+  justify-content: center;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-legal-social.hildes-social-pills--legal-strip li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-legal-social.hildes-social-pills--legal-strip li a {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-legal-social.hildes-social-pills--legal-strip li a:hover {
+  background: transparent !important;
+  border: none !important;
+  color: rgba(255, 255, 255, 0.78) !important;
+  transform: none;
+}
+
+.footer-two .rts-copyright-area .hildes-footer-legal-social.hildes-social-pills--legal-strip li a i {
+  font-size: 1.555rem !important;
+  color: white !important;
+  opacity: 1 !important;
+  margin: 0 3px;
+}
+
+/* Footer: map row — contact column vertically centered vs map; compact “Contact Us” block + socials */
+.map-area-main-wrapper > .row.align-items-center {
+  align-items: stretch;
+}
+
+@media (min-width: 992px) {
+  .map-area-main-wrapper > .row.align-items-center {
+    align-items: center;
+  }
+}
+
+.hildes-contact-map-aside {
+  margin-top: clamp(0.5rem, 2vw, 1.25rem);
+  padding: clamp(0.35rem, 1.5vw, 0.85rem) 0;
+}
+
+.hildes-contact-map-aside .title-main {
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+  margin-bottom: 6px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hildes-contact-map-aside .line {
+  max-width: 44px;
+}
+
+.hildes-contact-map-aside .signle-contact-information {
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.hildes-contact-map-aside .signle-contact-information .icon {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+}
+
+.hildes-contact-map-aside .signle-contact-information .icon i {
+  font-size: 13px;
+}
+
+.map-information-2-footer .contact-information-main-wrapper .signle-contact-information .information-wrapper span {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.map-information-2-footer .contact-information-main-wrapper .signle-contact-information .information-wrapper .title,
+.map-information-2-footer .contact-information-main-wrapper .signle-contact-information .information-wrapper h6.title {
+  font-size: 18px;
+}
+
+.map-information-2-footer .contact-information-main-wrapper .signle-contact-information {
+  margin-bottom: 30px;
+}
+
+/* Header top: theme adds a vertical bar after every .mail; hide it after the last item (e.g. WhatsApp) */
+.header-top-area-wrapper .header-top-one-wrapper .left .mail:last-child::after {
+  display: none;
+}
+
+/* Shared: visible, centered social pills (Contact Us block + footer under tagline) */
+.hildes-social-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.hildes-contact-social.hildes-social-pills {
+  margin: 28px 0 0;
+  padding: 16px 0;
+  border-top: 1px solid rgba(28, 37, 57, 0.12);
+}
+
+.hildes-social-pills li {
+  margin: 0;
+  padding: 0;
+}
+
+.hildes-social-pills li a {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 !important;
+  border-radius: 50%;
+  /* background: #e4e9f2 !important; */
+  background: transparent !important;
+  border: 1px solid rgba(28, 37, 57, 0.22) !important;
+  color: #1c2539 !important;
+  opacity: 1 !important;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.hildes-social-pills li a:hover {
+  background: #1c2539 !important;
+  border-color: #1c2539 !important;
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+.hildes-social-pills li a i {
+  font-size: 15px !important;
+  opacity: 1 !important;
+  color: inherit !important;
+}
+
+/* Large HilDes mark below main footer — centered, intrinsic size, scales down on small screens */
+.hildes-footer-big-logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: clamp(1.75rem, 5vw, 3rem) clamp(0.75rem, 4vw, 1.5rem) clamp(2rem, 6vw, 3.5rem);
+  box-sizing: border-box;
+  background: none;
+}
+
+.hildes-footer-big-logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Service details page styling */
+.rts-service-details-area-main-bottom {
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 24px;
+}
+
+.rts-service-details-area-main-bottom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255, 106, 0, 0.07), transparent 45%),
+    radial-gradient(circle at 90% 30%, rgba(26, 69, 151, 0.08), transparent 46%);
+  pointer-events: none;
+}
+
+.service-details-left-area {
+  position: relative;
+  z-index: 1;
+}
+
+.service-hero-title-black {
+  color: #000 !important;
+}
+
+.service-hero-title-black .split-line,
+.service-hero-title-black .split-line * {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.service-section-card {
+  border: 1px solid rgba(13, 43, 102, 0.08);
+  border-radius: 16px;
+  padding: 26px 26px;
+  margin-bottom: 26px;
+  box-shadow: 0 10px 26px rgba(13, 43, 102, 0.08);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.service-section-card::after {
+  display: none;
+}
+
+.service-section-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(13, 43, 102, 0.14);
+}
+
+.service-section-card--a {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 255, 0.95));
+}
+
+.service-section-card--b {
+  background: linear-gradient(180deg, rgba(249, 251, 255, 0.96), rgba(243, 247, 255, 0.96));
+}
+
+.service-section-card--c {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(246, 248, 252, 0.96));
+}
+
+.service-section-card--d {
+  background: linear-gradient(180deg, rgba(248, 251, 255, 0.96), rgba(242, 247, 255, 0.96));
+  padding-bottom: 44px;
+}
+
+.service-hero-intro {
+  width: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(248, 250, 255, 0.94));
+  border: 1px solid rgba(13, 43, 102, 0.08);
+  border-radius: 16px;
+  padding: 24px 26px 20px;
+  box-shadow: 0 14px 32px rgba(13, 43, 102, 0.1);
+  backdrop-filter: blur(3px);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 34px;
+}
+
+.service-hero-intro .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #0f3f91;
+  margin-bottom: 10px;
+}
+
+.service-hero-intro .eyebrow::before {
+  content: "";
+  width: 26px;
+  height: 2px;
+  border-radius: 999px;
+  background: #ff6a00;
+}
+
+.service-hero-intro .disc {
+  margin: 0;
+  color: #22304e;
+  line-height: 1.75;
+  font-size: 18px;
+  max-width: 88ch;
+}
+
+.service-hero-intro .disc p:last-child {
+  margin-bottom: 0;
+}
+
+.service-details-left-area .title {
+  color: #000;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+
+.service-details-left-area .disc p {
+  margin-bottom: 12px;
+  color: #2b3d60;
+  line-height: 1.8;
+}
+
+.service-process-flow {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.service-process-track {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.service-process-step {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding-left: 2px;
+}
+
+.service-process-step::after {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 62px;
+  width: 2px;
+  height: calc(100% + 16px);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #dbe7ff 0%, #cbd5e1 100%);
+}
+
+.service-process-step:last-child::after {
+  display: none;
+}
+
+.service-step-number {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(37, 99, 235, 0.3);
+  flex: 0 0 56px;
+  position: relative;
+  z-index: 1;
+}
+
+.service-step-number::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.16);
+  z-index: -1;
+}
+
+.service-step-card {
+  border: 1px solid rgba(30, 41, 59, 0.08);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.09);
+  padding: 20px 24px;
+  flex: 1 1 auto;
+  min-height: 0;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.service-process-step:hover .service-step-card {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  border-color: rgba(37, 99, 235, 0.24);
+}
+
+.service-step-card::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 26px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-left: 1px solid rgba(15, 23, 42, 0.08);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  transform: rotate(45deg);
+}
+
+.service-step-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.service-step-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(37, 99, 235, 0.12));
+  color: #2563eb;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 52px;
+}
+
+.service-step-icon-wrap i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.service-process-step:nth-child(2) .service-step-icon-wrap {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(8, 145, 178, 0.12));
+  color: #06b6d4;
+}
+
+.service-process-step:nth-child(3) .service-step-icon-wrap {
+  background: linear-gradient(135deg, rgba(132, 204, 22, 0.14), rgba(101, 163, 13, 0.14));
+  color: #65a30d;
+}
+
+.service-process-step:nth-child(4) .service-step-icon-wrap {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.14), rgba(245, 158, 11, 0.14));
+  color: #f59e0b;
+}
+
+.service-process-step:nth-child(5) .service-step-icon-wrap {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.14), rgba(147, 51, 234, 0.14));
+  color: #9333ea;
+}
+
+.service-step-title {
+  margin: 0 0 8px;
+  color: #172554;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.service-step-detail {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+  font-size: 15px;
+  text-align: left;
+}
+
+.service-process-step:nth-child(2) .service-step-number {
+  background: #06b6d4;
+  box-shadow: 0 8px 18px rgba(6, 182, 212, 0.28);
+}
+
+.service-process-step:nth-child(2) .service-step-number::before {
+  background: rgba(6, 182, 212, 0.16);
+}
+
+.service-process-step:nth-child(3) .service-step-number {
+  background: #65a30d;
+  box-shadow: 0 8px 18px rgba(101, 163, 13, 0.28);
+}
+
+.service-process-step:nth-child(3) .service-step-number::before {
+  background: rgba(101, 163, 13, 0.16);
+}
+
+.service-process-step:nth-child(4) .service-step-number {
+  background: #f59e0b;
+  box-shadow: 0 8px 18px rgba(245, 158, 11, 0.28);
+}
+
+.service-process-step:nth-child(4) .service-step-number::before {
+  background: rgba(245, 158, 11, 0.16);
+}
+
+.service-process-step:nth-child(5) .service-step-number {
+  background: #9333ea;
+  box-shadow: 0 8px 18px rgba(147, 51, 234, 0.28);
+}
+
+.service-process-step:nth-child(5) .service-step-number::before {
+  background: rgba(147, 51, 234, 0.16);
+}
+
+.service-process-image-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  background: #f6f8fd;
+}
+
+.service-process-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-short-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.service-details-left-area .service-short-main-wrapper .single-short-service {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(244, 248, 255, 0.95));
+  border: 1px solid rgba(13, 43, 102, 0.1);
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 8px 18px rgba(13, 43, 102, 0.07);
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: none;
+}
+
+.service-short-main-wrapper .single-short-service::before {
+  content: "";
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff6a00, #ff9f4a);
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
+  flex: 0 0 34px;
+}
+
+.service-short-main-wrapper .title-sm {
+  margin: 0;
+  color: #1b3568;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+#accordionServiceFaq .accordion-item {
+  border: 1px solid rgba(13, 43, 102, 0.11);
+  border-radius: 12px !important;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+#accordionServiceFaq .accordion-button {
+  font-weight: 700;
+  color: #1b3568;
+  background: rgba(244, 248, 255, 0.8);
+}
+
+#accordionServiceFaq .accordion-button:not(.collapsed) {
+  color: #0f2f66;
+  background: rgba(236, 243, 255, 0.95);
+  box-shadow: none;
+}
+
+#accordionServiceFaq .accordion-body {
+  color: #2a3c5f;
+  line-height: 1.75;
+  font-size: 18px;
+  padding-top: 14px;
+}
+
+/* Header services mega menu compact 3x3 grid */
+.service-menu-grid-row .single-service-menu--compact {
+  min-height: 118px;
+  padding: 14px 14px 12px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.service-menu-grid-row {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 0 16px;
+}
+
+.service-menu-grid-row a:hover .single-service-menu--compact,
+.service-menu-grid-row a:focus-visible .single-service-menu--compact {
+  background: #f1f3f6;
+  transform: translateY(-1px);
+}
+
+.service-menu-grid-row .single-service-menu--compact .icon {
+  min-width: 28px;
+}
+
+.service-menu-grid-row .single-service-menu--compact .icon i {
+  font-size: 14px;
+}
+
+.service-menu-grid-row .single-service-menu--compact .info .title {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.service-menu-grid-row .single-service-menu--compact .info .details {
+  font-size: 14px;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.service-menu-all-link {
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.case-study-section-card .title {
+  margin-bottom: 10px;
+  color: #000 !important;
+}
+
+.case-study-section-icon {
+  margin-right: 8px;
+  font-size: 0.95em;
+  vertical-align: middle;
+}
+
+.case-study-section-content ul,
+.case-study-section-content ol {
+  margin: 10px 0 14px 22px;
+}
+
+.case-study-section-content li {
+  margin-bottom: 6px;
+  line-height: 1.7;
+}
+
+.case-study-content-row {
+  align-items: flex-start;
+}
+
+.case-study-contact-wrap {
+  position: sticky;
+  top: 105px;
+  margin-top: -245px;
+  z-index: 6;
+}
+
+.hildes-service-list-link {
+  display: block;
+}
+
+.hildes-service-list-box {
+  background: #fff;
+  border: 1px solid rgba(28, 37, 57, 0.08);
+  min-height: 260px;
+}
+
+.hildes-service-list-box .icons img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Homepage service swiper: Font Awesome icon replaces theme SVG */
+.single-service-signle-wrapper .icons.hildes-home-service-slider-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 56px;
+}
+
+.single-service-signle-wrapper .icons.hildes-home-service-slider-icon i {
+  font-size: 52px;
+  line-height: 1;
+  color: #1c2539;
+}
+
+.case-study-contact-inline {
+  background: #111827;
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.case-study-contact-inline .title {
+  color: #fff !important;
+}
+
+.case-study-contact-inline-bottom {
+  margin-bottom: 300px;
+}
+
+.case-study-contact-title {
+  margin: 0 0 6px;
+  color: #fff !important;
+  font-size: 24px;
+}
+
+.case-study-contact-subtitle {
+  color: rgba(255, 255, 255, 0.74);
+  margin: 0 0 14px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.case-study-contact-form .form-group {
+  margin-bottom: 11px;
+}
+
+.case-study-contact-form label {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.case-study-contact-form input,
+.case-study-contact-form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 12px;
+  outline: none;
+}
+
+.case-study-contact-form input:focus,
+.case-study-contact-form textarea:focus {
+  border-color: rgba(255, 106, 0, 0.7);
+  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.18);
+}
+
+.case-study-contact-form .btn-primary {
+  width: 100%;
+}
+
+.case-study-widget-card {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.case-study-widget-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.case-study-widget-list li a {
+  display: block;
+  color: rgba(255, 255, 255, 0.86);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: all 0.2s ease;
+}
+
+.case-study-widget-list li a:hover {
+  border-color: rgba(255, 106, 0, 0.45);
+  background: rgba(255, 106, 0, 0.12);
+  color: #fff;
+}
+
+.service-mega-menu-style .wrapper {
+  border-bottom: none;
+}
+
+.rts-mega-menu.service-mega-menu-style {
+  border-bottom: 2px solid #ff6a00;
+}
+
+.service-mega-menu-style .container {
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 991px) {
+  .service-section-card {
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 18px;
+  }
+
+  .service-hero-intro {
+    padding: 18px 18px;
+    border-radius: 12px;
+  }
+
+  .service-hero-intro .disc {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .service-hero-intro {
+    margin-bottom: 24px;
+  }
+
+  .service-short-main-wrapper .single-short-service {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .service-process-split {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .service-process-step {
+    gap: 12px;
+    padding-left: 0;
+  }
+
+  .service-step-number {
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+    flex-basis: 44px;
+  }
+
+  .service-process-step::after {
+    left: 22px;
+    top: 50px;
+  }
+
+  .service-step-card {
+    padding: 14px 16px;
+  }
+
+  .service-step-content {
+    gap: 10px;
+  }
+
+  .service-step-icon-wrap {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .service-step-icon-wrap i {
+    font-size: 16px;
+  }
+
+  .service-step-title {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .service-step-detail {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .service-short-main-wrapper .single-short-service::before {
+    width: 28px;
+    height: 28px;
+    flex-basis: 28px;
+  }
+
+  .service-short-main-wrapper .title-sm {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .service-faq-section {
+    margin-bottom: 28px;
+  }
+
+  .case-study-last-section {
+    margin-bottom: 28px;
+  }
+
+  .case-study-contact-inline {
+    margin-top: 10px;
+  }
+
+  .case-study-contact-inline-bottom {
+    margin-bottom: 28px;
+  }
+
+  .case-study-contact-wrap {
+    position: static;
+    top: auto;
+    margin-top: 10px;
+    z-index: auto;
+  }
+
+  /* About Us: extra space below FAQ section on small screens */
+  .about-page-faq-block {
+    margin-bottom: 300px;
+  }
+}
+
+/* Mobile off-canvas: Services & Case Studies dropdown rows only */
+.mobile-menu .hildes-mobile-submenu > li + li {
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.mobile-menu .hildes-mobile-submenu > li > a.hildes-mobile-submenu-link {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 6px 12px 2px;
+  line-height: 1.45;
+}
+
+.mobile-menu .hildes-mobile-submenu > li > a.hildes-mobile-submenu-link .hildes-mobile-submenu-chevron {
+  flex-shrink: 0;
+  margin-top: 0.28em;
+  font-size: 10px;
+  opacity: 0.55;
+  color: #111827;
+}
+
+.mobile-menu .hildes-mobile-submenu > li > a.hildes-mobile-submenu-link .hildes-mobile-submenu-label {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Careers page */
+.hildes-careers-cms-intro .hildes-careers-cms-card {
+  margin-top: 0;
+}
+
+/* Careers — listing (row card layout) */
+.hildes-careers-jobs-section--rowcards .hildes-careers-jobs-head {
+  margin-bottom: 32px;
+  text-align: left;
+  max-width: 720px;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-jobs-head .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ff6a00;
+  margin-bottom: 10px;
+}
+
+.hildes-careers-jobs-section--rowcards .eyebrow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff6a00;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-jobs-head .title {
+  font-size: clamp(28px, 3.5vw, 38px);
+  font-weight: 700;
+  margin: 0 0 10px;
+  color: #0a1128;
+  line-height: 1.15;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-jobs-head .disc {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.65;
+  font-size: 16px;
+  max-width: 560px;
+}
+
+.hildes-careers-jobs-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hildes-careers-job-rowcard {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 8px 26px rgba(10, 17, 40, 0.06);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.hildes-careers-job-rowcard:hover {
+  box-shadow: 0 14px 36px rgba(10, 17, 40, 0.09);
+  transform: translateY(-2px);
+}
+
+.hildes-careers-job-rowcard__row--head {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr) auto;
+  gap: 18px 24px;
+  align-items: center;
+  padding: 22px 24px 20px;
+}
+
+.hildes-careers-job-rowcard__iconbox {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #374151;
+  flex-shrink: 0;
+}
+
+.hildes-careers-job-rowcard__title {
+  margin: 0 0 6px;
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-weight: 700;
+  color: #0a1128;
+  line-height: 1.25;
+}
+
+.hildes-careers-job-rowcard__subtitle {
+  margin: 0;
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.45;
+}
+
+.hildes-careers-job-rowcard__headactions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hildes-careers-job-rowcard a.rts-btn.btn-primary.hildes-careers-job-rowcard__apply,
+.hildes-careers-job-rowcard a.rts-btn.btn-primary.hildes-careers-job-rowcard__apply:visited {
+  text-decoration: none;
+  gap: 10px;
+  color: var(--color-white, #fff);
+}
+
+.hildes-careers-job-rowcard__apply i {
+  font-size: 0.88em;
+}
+
+.hildes-careers-job-rowcard a.rts-btn.btn-primary.hildes-careers-job-rowcard__apply:hover,
+.hildes-careers-job-rowcard a.rts-btn.btn-primary.hildes-careers-job-rowcard__apply:focus-visible {
+  color: #000;
+}
+
+.hildes-careers-job-rowcard a.rts-btn.btn-primary.hildes-careers-job-rowcard__apply:hover i {
+  color: #000;
+}
+
+.hildes-careers-job-rowcard__divider {
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: #e5e7eb;
+}
+
+.hildes-careers-job-rowcard__row--facts {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 6px 0;
+}
+
+.hildes-careers-job-rowcard__fact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 18px 10px 20px;
+  min-width: 0;
+}
+
+.hildes-careers-job-rowcard__fact + .hildes-careers-job-rowcard__fact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18px;
+  bottom: 18px;
+  width: 1px;
+  background: #e5e7eb;
+}
+
+.hildes-careers-job-rowcard__fact > i {
+  font-size: 18px;
+  color: #9ca3af;
+}
+
+.hildes-careers-job-rowcard__fact-dollar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #9ca3af;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.hildes-careers-job-rowcard__fact-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  line-height: 1.4;
+  word-wrap: break-word;
+  max-width: 100%;
+}
+
+.hildes-careers-job-rowcard__fact-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  margin-top: auto;
+}
+
+.hildes-careers-job-rowcard__row--foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px 28px;
+  padding: 20px 24px 22px;
+}
+
+.hildes-careers-job-rowcard__footcopy {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+
+.hildes-careers-job-rowcard__hours {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.hildes-careers-job-rowcard__excerpt {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4b5563;
+}
+
+.hildes-careers-job-rowcard__details {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0a1128;
+  text-decoration: none;
+  margin-top: 2px;
+  transition: color 0.3s ease;
+}
+
+.hildes-careers-job-rowcard__details i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.hildes-careers-job-rowcard__details:hover {
+  color: #ff6a00;
+}
+
+.hildes-careers-job-rowcard__details:hover i {
+  transform: translateX(3px);
+}
+
+.hildes-careers-job-rowcard--empty {
+  text-align: center;
+  padding: 28px 24px;
+}
+
+.hildes-careers-job-rowcard--empty a {
+  color: #ff6a00;
+  font-weight: 600;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 28px;
+  padding: 22px 26px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  border: 1px solid #e5e7eb;
+}
+
+.hildes-careers-resume-cta__icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #4b5563;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.hildes-careers-resume-cta__copy {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.hildes-careers-resume-cta__head {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 6px;
+  line-height: 1.35;
+}
+
+.hildes-careers-resume-cta__text {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.65;
+  color: #6b7280;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta a.rts-btn.btn-border.hildes-careers-resume-cta__btn,
+.hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta a.rts-btn.btn-border.hildes-careers-resume-cta__btn:visited {
+  flex-shrink: 0;
+  text-decoration: none;
+  color: #1a202c;
+  background: #fff;
+  border-color: #e5e7eb;
+  gap: 10px;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta .hildes-careers-resume-cta__btn i {
+  font-size: 0.88em;
+  transition: transform 0.8s ease, color 0.8s ease;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta a.rts-btn.btn-border.hildes-careers-resume-cta__btn:hover,
+.hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta a.rts-btn.btn-border.hildes-careers-resume-cta__btn:hover:visited {
+  color: #000;
+  border-color: #d1d5db;
+  background: #fff;
+}
+
+.hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta a.rts-btn.btn-border.hildes-careers-resume-cta__btn:hover i {
+  color: #000;
+  transform: translateX(4px);
+}
+
+@media (max-width: 991px) {
+  .hildes-careers-job-rowcard__row--head {
+    grid-template-columns: 56px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .hildes-careers-job-rowcard__headactions {
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+  }
+
+  .hildes-careers-job-rowcard__row--facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hildes-careers-job-rowcard__fact:nth-child(2n + 1)::before {
+    display: none;
+  }
+
+  .hildes-careers-job-rowcard__fact:nth-child(n + 3) {
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
+@media (max-width: 575px) {
+  .hildes-careers-job-rowcard__row--facts {
+    grid-template-columns: 1fr;
+  }
+
+  .hildes-careers-job-rowcard__fact:nth-child(n + 3) {
+    border-top: none;
+  }
+
+  .hildes-careers-job-rowcard__fact::before {
+    display: none !important;
+  }
+
+  .hildes-careers-job-rowcard__fact + .hildes-careers-job-rowcard__fact {
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
+@media (max-width: 767px) {
+  .hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hildes-careers-jobs-section--rowcards .hildes-careers-resume-cta a.rts-btn.btn-border.hildes-careers-resume-cta__btn {
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+  }
+}
+
+/* Job detail (public) */
+.hildes-job-detail-page .hildes-job-detail-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 10px;
+  font-size: 14px;
+  margin-bottom: 22px;
+  color: #6b7280;
+}
+
+.hildes-job-detail-breadcrumb a {
+  color: #0a1128;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.hildes-job-detail-breadcrumb a:hover {
+  color: #ff6a00;
+}
+
+.hildes-job-detail-breadcrumb__sep {
+  opacity: 0.45;
+  user-select: none;
+}
+
+.hildes-job-detail-breadcrumb__current {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.hildes-job-detail-page .card-like {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 8px 28px rgba(10, 17, 40, 0.05);
+}
+
+.hildes-job-detail-summary {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+}
+
+.hildes-job-detail-summary__icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #374151;
+}
+
+.hildes-job-detail-summary__subtitle {
+  margin: 0 0 12px;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.hildes-job-detail-summary__tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.hildes-job-detail-summary__tags li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.hildes-job-detail-summary__tags i {
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.hildes-job-detail-section {
+  padding: 26px 24px 28px;
+  margin-bottom: 22px;
+}
+
+.hildes-job-detail-section__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0a1128;
+  margin: 0 0 16px;
+  line-height: 1.3;
+}
+
+.hildes-job-detail-prose {
+  font-size: 15px;
+  line-height: 1.75;
+  color: #4b5563;
+}
+
+.hildes-job-detail-prose p {
+  margin-bottom: 12px;
+}
+
+.hildes-job-detail-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.hildes-job-detail-prose ul,
+.hildes-job-detail-prose ol {
+  margin: 12px 0;
+  padding-left: 22px;
+}
+
+/* Job detail: sidebar apply (reuse service-detail dark form; no negative overlap on hero) */
+.hildes-job-detail-page .case-study-contact-wrap {
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hildes-job-detail-page .case-study-contact-form select {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px 12px;
+  outline: none;
+  font-size: 14px;
+}
+
+.hildes-job-detail-page .case-study-contact-form select:focus {
+  border-color: rgba(255, 106, 0, 0.7);
+  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.18);
+}
+
+.hildes-job-detail-page .case-study-contact-form select option {
+  background: #111827;
+  color: #fff;
+}
+
+.hildes-job-detail-page .job-apply-dropzone {
+  position: relative;
+  border: 1px dashed rgba(255, 255, 255, 0.32);
+  border-radius: 10px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.04);
+  min-height: 118px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.hildes-job-detail-page .job-apply-dropzone--active {
+  border-color: rgba(255, 106, 0, 0.85);
+  background: rgba(255, 106, 0, 0.1);
+}
+
+.hildes-job-detail-page .job-apply-dropzone.is-invalid {
+  border-color: #f97373;
+}
+
+.hildes-job-detail-page .job-apply-dropzone__input-native {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  opacity: 0;
+}
+
+.hildes-job-detail-page .job-apply-dropzone__label-hit {
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  padding: 18px 14px;
+}
+
+.hildes-job-detail-page .job-apply-dropzone__ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.hildes-job-detail-page .job-apply-dropzone__icon {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1;
+}
+
+.hildes-job-detail-page .job-apply-dropzone__line {
+  display: block;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.hildes-job-detail-page .job-apply-dropzone__hint {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.hildes-job-detail-page .job-apply-dropzone__name {
+  display: block;
+  margin: 4px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.hildes-job-detail-page .case-study-contact-form input.is-invalid,
+.hildes-job-detail-page .case-study-contact-form textarea.is-invalid,
+.hildes-job-detail-page .case-study-contact-form select.is-invalid {
+  border-color: #f97373 !important;
+}
+
+.job-apply-field-error {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #fecaca;
+  min-height: 0;
+}
+
+.job-apply-field-error:empty {
+  display: none;
+}
+
+.hildes-job-detail-page .case-study-contact-form button.rts-btn.is-loading {
+  opacity: 0.72;
+  cursor: wait;
+  pointer-events: none;
+}
+
+.hildes-job-detail-page .case-study-contact-form .job-apply-btn-text {
+  pointer-events: none;
+}
+
+form[data-ajax-lead-form] button.rts-btn.is-loading,
+form[data-ajax-newsletter-form] button.is-loading {
+  opacity: 0.72;
+  cursor: wait;
+  pointer-events: none;
+}
+
+.hildes-ajax-form-status {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Toast (job apply AJAX) */
+.hildes-job-apply-toast {
+  position: fixed;
+  bottom: 28px;
+  right: 24px;
+  left: auto;
+  max-width: min(380px, calc(100vw - 32px));
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: #fff;
+  background: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+  z-index: 10050;
+  transform: translateY(16px);
+  opacity: 0;
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+.hildes-job-apply-toast.hildes-job-apply-toast--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hildes-job-apply-toast.hildes-job-apply-toast--error {
+  border-color: rgba(249, 115, 115, 0.45);
+  background: #1f1414;
+}
+
+.hildes-job-detail-side-foot {
+  padding: 20px 22px 22px;
+}
+
+.hildes-job-detail-page .case-study-contact-inline.hildes-job-detail-side-foot .hildes-job-detail-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: color 0.25s ease;
+}
+
+.hildes-job-detail-page .case-study-contact-inline.hildes-job-detail-side-foot .hildes-job-detail-all-link:hover {
+  color: #ffb07a;
+}
+
+.hildes-job-detail-page .case-study-contact-inline.hildes-job-detail-side-foot .hildes-job-detail-deadline-note {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+}
+
+.hildes-job-detail-page .case-study-contact-inline.hildes-job-detail-side-foot .hildes-job-detail-deadline-note strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.hildes-job-detail-back-mobile {
+  margin-top: 8px;
+}
+
+.hildes-job-detail-back-mobile .rts-btn {
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media (max-width: 991px) {
+  .hildes-job-apply-toast {
+    right: 16px;
+    left: 16px;
+    bottom: 20px;
+    max-width: none;
+    text-align: center;
+  }
+}
+
+.careers-page-end-spacer {
+  margin-bottom: 300px;
+}
+
