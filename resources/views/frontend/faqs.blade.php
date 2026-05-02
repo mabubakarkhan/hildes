@@ -125,19 +125,42 @@
     const tabs = Array.from(root.querySelectorAll('[data-faq-group-tab]'));
     const panels = Array.from(root.querySelectorAll('[data-faq-group-panel]'));
 
-    const activate = (id) => {
+    const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
+
+    const activate = (id, options = {}) => {
         tabs.forEach((tab) => {
             const active = tab.getAttribute('data-faq-group-tab') === id;
             tab.classList.toggle('is-active', active);
             tab.setAttribute('aria-selected', active ? 'true' : 'false');
         });
+
         panels.forEach((panel) => {
-            panel.classList.toggle('is-active', panel.getAttribute('data-faq-group-panel') === id);
+            const active = panel.getAttribute('data-faq-group-panel') === id;
+            panel.classList.toggle('is-active', active);
+            if (active && options.scroll && isMobile()) {
+                // small timeout to allow classes to apply before scrolling
+                setTimeout(() => {
+                    // add 70px offset to account for any fixed headers and spacing
+                    const offset = 120;
+                    const y = panel.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({ top: y, behavior: 'smooth' });
+                }, 60);
+            }
         });
     };
 
+    // If on mobile and no tab is active, activate the first tab
+    const anyActive = tabs.some(t => t.classList.contains('is-active'));
+    if (isMobile() && !anyActive && tabs.length) {
+        const id = tabs[0].getAttribute('data-faq-group-tab') || '0';
+        activate(id);
+    }
+
     tabs.forEach((tab) => {
-        tab.addEventListener('click', () => activate(tab.getAttribute('data-faq-group-tab') || '0'));
+        tab.addEventListener('click', () => {
+            const id = tab.getAttribute('data-faq-group-tab') || '0';
+            activate(id, { scroll: true });
+        });
     });
 })();
 </script>

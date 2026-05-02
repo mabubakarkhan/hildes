@@ -70,7 +70,7 @@
         </div>
     </div>
 
-    <div class="rts-service-details-area-main-bottom">
+    <div class="rts-service-details-area-main-bottom mb--310">
         <div class="container">
             <div class="row justify-content-center case-study-content-row">
                 <div class="col-xl-8 col-lg-7">

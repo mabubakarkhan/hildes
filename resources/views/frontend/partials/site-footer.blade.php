@@ -12,17 +12,17 @@
                                     @else
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d29208.07522277672!2d90.423296!3d23.7826795!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1738651440174!5m2!1sen!2sbd"
-                                        width="625" height="625" style="border:0;" allowfullscreen="" loading="lazy"
+                                        width="625" height="550" style="border:0;" allowfullscreen="" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"
                                         title="Company location on Google Maps"></iframe>
                                     @endif
                                 </div>
                             </div>
                             <div class="col-lg-5">
-                                <div class="map-information-2-footer hildes-contact-map-aside">
+                                <div class="map-information-2-footer">
                                     <h5 class="title-main">Contact Us</h5>
                                     <img loading="lazy" src="{{ asset('assets/images/footer/02.svg') }}" alt="line" class="line">
-                                    <div class="contact-information-main-wrapper hildes-contact-info-list">
+                                    <div class="contact-information-main-wrapper">
                                         @if(filled($contact->email))
                                         <div class="signle-contact-information">
                                             <div class="icon">
@@ -190,17 +190,19 @@
             </div>
         </div>
         <!-- copyright area end -->
+        <div class="rts-copyright-area text-center">
+            <img class="hildes-footer-big-logo" src="{{ asset('assets/images/logo/logo-footer-big.png') }}" alt="HilDes" loading="lazy" decoding="async">
+        </div>
     </div>
-    <div class="hildes-footer-big-logo-wrap" role="presentation">
-        <img class="hildes-footer-big-logo" src="{{ asset('assets/images/logo/logo-footer-big.png') }}" alt="HilDes" loading="lazy" decoding="async">
-    </div>
+    <!-- <div class="rts-footer-area footer-two mt-dec-footer-map bg-footer-two bg_image"> -->
+    <!-- </div> -->
     <!-- rts footer two area wrapper end -->
 
     <div id="side-bar" class="side-bar header-two">
     <button class="close-icon-menu" title="Close menu"><i class="far fa-times"></i></button>
     <!-- inner menu area desktop start -->
     <div class="rts-sidebar-menu-desktop">
-        <a class="logo-1" href="/"><img class="logo" src="{{ asset('assets/images/logo/logo.png') }}" alt="HilDes"><span class="hildes-brand-text">HilDes</span></a>
+        <a class="logo-1" href="/"><img class="logo mt-0" src="{{ asset('assets/images/logo/logo.png') }}" alt="HilDes"><span class="hildes-brand-text">HilDes</span></a>
         <div class="body d-none d-xl-block">
             <p class="disc">
                 HilDes focuses on AI solutions, SaaS product engineering, and rapid MVP development
@@ -294,6 +296,10 @@
                             </a>
                         </li>
                     </ul>
+                </li>
+                <!-- career -->
+                <li>
+                    <a href="{{ route('careers.page') }}" class="main" aria-expanded="false">Careers</a>
                 </li>
                 <li>
                     <a href="{{ route('faqs.page') }}" class="main" aria-expanded="false">FAQs</a>

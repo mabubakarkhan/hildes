@@ -83,7 +83,7 @@
         </div>
     </div>
 
-    <div class="rts-service-details-area-main-bottom service-page-detail">
+    <div class="rts-service-details-area-main-bottom service-page-detail mb--310">
         <div class="container">
             <div class="row g-4">
                 <div class="col-xl-8 col-lg-7">

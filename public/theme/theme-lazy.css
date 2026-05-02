@@ -5,7 +5,7 @@ img.is-lazy {
 
 .hildes-services-cms-detail {
   margin-top: -70px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .hildes-services-faq-block {
@@ -1384,6 +1384,7 @@ img:not(.is-lazy) {
   display: block;
   width: auto;
   height: auto;
+  margin: auto;
   max-width: 100%;
   object-fit: contain;
 }
@@ -2435,6 +2436,12 @@ img:not(.is-lazy) {
   flex: 1 1 240px;
   min-width: 0;
 }
+@media(max-width:768px){
+
+  .hildes-careers-resume-cta__copy {
+    flex: 1 1 100px;
+  }
+}
 
 .hildes-careers-resume-cta__head {
   display: block;
@@ -2894,3 +2901,13 @@ form[data-ajax-newsletter-form] button.is-loading {
   margin-bottom: 300px;
 }
 
+
+@media (min-width: 1201px) and (max-width: 1399px) {
+  .header-one .nav-area{
+    margin-right: 20px;
+  }
+  .nav-area ul{
+    gap: 25px
+  }
+  
+}

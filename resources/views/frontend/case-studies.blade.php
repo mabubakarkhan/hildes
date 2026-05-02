@@ -65,7 +65,7 @@
         </section>
     @endif
     @if(filled($caseStudiesCmsDetail ?? null))
-        <section class="hildes-services-cms-detail">
+        <section class="hildes-services-cms-detail mb--310">
             <div class="container">
                 <div class="hildes-services-cms-card">
                     {!! $caseStudiesCmsDetail !!}

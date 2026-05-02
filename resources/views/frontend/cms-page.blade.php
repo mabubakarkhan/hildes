@@ -30,7 +30,7 @@
     @endif
 
     @if(filled($cmsPage->detail_content ?? null))
-        <section class="hildes-services-cms-detail cms-page-detail-block">
+        <section class="hildes-services-cms-detail cms-page-detail-block mb--310">
             <div class="container">
                 <div class="hildes-services-cms-card">
                     {!! $cmsPage->detail_content !!}

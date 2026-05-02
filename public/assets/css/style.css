@@ -17602,6 +17602,9 @@ body.with-sticky-item {
   .footer-two .footer-one-single-wized .quick-link-inner {
     flex-direction: column;
   }
+  .footer-two .footer-one-single-wized .quick-link-inner {
+    gap: 0px;
+  }
 }
 .footer-two .footer-one-single-wized .quick-link-inner .links.margin-left-70 {
   margin-left: 70px;
@@ -17759,20 +17762,25 @@ body.with-sticky-item {
   margin-top: -310px;
   position: relative;
   z-index: 50;
-  height: 625px;
+  /* height: 625px; */
+  padding: 20px 0px 10px;
 }
 
 .map-information-2-footer {
-  padding: 82px 75px;
+  padding: 0 65px;
 }
 @media only screen and (max-width: 1199px) {
   .map-information-2-footer {
-    padding: 35px;
+    padding: 0 35px;
   }
 }
 @media only screen and (max-width: 991px) {
   .map-information-2-footer {
-    padding: 25px;
+    padding: 0 25px;
+  }
+  .mt-dec-footer-map .map-area-main-wrapper {
+    height: auto;
+    padding: 0px;
   }
 }
 .map-information-2-footer .title-main {
@@ -17814,6 +17822,9 @@ body.with-sticky-item {
   font-size: 22px;
   margin: 0;
   font-weight: 500;
+}
+.map-information-2-footer .contact-information-main-wrapper .signle-contact-information:last-child .information-wrapper {
+  width: calc(100% - 100px);
 }
 
 .footer-bg-three {
@@ -23870,6 +23881,7 @@ body.with-sticky-item {
   transform: translateY(15px);
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
+  background: #fff;
 }
 
 .progress-wrap.active-progress {

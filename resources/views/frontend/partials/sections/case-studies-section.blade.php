@@ -32,19 +32,20 @@
                         <div class="swiper-wrapper">
                             @forelse($caseStudiesForSection as $caseStudyItem)
                                 <div class="swiper-slide">
-                                    <div class="project-style-one">
+                                    <article class="case-study-index-card">
                                         <a href="{{ route('case-studies.show', $caseStudyItem->slug) }}" class="thumbnail">
                                             <img loading="lazy" src="{{ $caseStudyItem->featured_image_url ?: asset('assets/images/project/01.webp') }}" alt="{{ $caseStudyItem->featured_image_alt ?: $caseStudyItem->title }}">
                                         </a>
-                                        <div class="inner-content">
-                                            <a href="{{ route('case-studies.show', $caseStudyItem->slug) }}">
-                                                <h5 class="title">{{ $caseStudyItem->title }}</h5>
-                                            </a>
+                                        <div class="case-study-index-content">
+                                            <h5 class="title">
+                                                <a href="{{ route('case-studies.show', $caseStudyItem->slug) }}">{{ $caseStudyItem->title }}</a>
+                                            </h5>
                                             @if(filled($caseStudyItem->tagline))
-                                                <span>{{ \Illuminate\Support\Str::limit(strip_tags((string) $caseStudyItem->tagline), 80) }}</span>
+                                                <p>{{ \Illuminate\Support\Str::limit(strip_tags((string) $caseStudyItem->tagline), 120) }}</p>
                                             @endif
+                                            <a href="{{ route('case-studies.show', $caseStudyItem->slug) }}" class="arrow-right-btn">Read More <i class="fa-solid fa-arrow-right"></i></a>
                                         </div>
-                                    </div>
+                                    </article>
                                 </div>
                             @empty
                                 <div class="swiper-slide">
