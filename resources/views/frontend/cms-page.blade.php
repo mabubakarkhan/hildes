@@ -40,7 +40,7 @@
     @endif
 
     @if(($cmsFaqs ?? collect())->isNotEmpty())
-        <section class="rts-section-gapBottom hildes-services-faq-block cms-page-faq-block cms-page-last-section">
+        <section class="rts-section-gapBottom mb--310">
             <div class="container">
                 <div class="service-section-card service-section-card--b service-faq-section">
                     <h3 class="title">Popular Questions</h3>
