@@ -9,6 +9,7 @@ use App\Models\HomeHeroSetting;
 use App\Models\HomeHeroSlide;
 use App\Models\ServicePage;
 use App\Models\Testimonial;
+use App\Services\WordPressRecentPostsService;
 use App\View\Composers\HomeServiceHrefsComposer;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -148,6 +149,10 @@ class AppServiceProvider extends ServiceProvider
                     ->whereNotNull('image')
                     ->ordered()
                     ->get()
+            );
+            $view->with(
+                'recentBlogPosts',
+                app(WordPressRecentPostsService::class)->getRecent()
             );
         });
     }

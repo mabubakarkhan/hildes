@@ -114,6 +114,22 @@ return [
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
         ],
 
+        'wordpress' => [
+            'driver' => 'mysql',
+            'host' => env('WP_BLOG_DB_HOST', env('DB_HOST', '127.0.0.1')),
+            'port' => env('WP_BLOG_DB_PORT', env('DB_PORT', '3306')),
+            'database' => env('WP_BLOG_DB_DATABASE', 'hildes_blog'),
+            'username' => env('WP_BLOG_DB_USERNAME', env('DB_USERNAME', 'root')),
+            'password' => env('WP_BLOG_DB_PASSWORD', env('DB_PASSWORD', '')),
+            'unix_socket' => env('WP_BLOG_DB_SOCKET', env('DB_SOCKET', '')),
+            'charset' => env('WP_BLOG_DB_CHARSET', 'utf8mb4'),
+            'collation' => env('WP_BLOG_DB_COLLATION', 'utf8mb4_unicode_ci'),
+            'prefix' => env('WP_BLOG_DB_PREFIX', 'wp_'),
+            'prefix_indexes' => true,
+            'strict' => true,
+            'engine' => null,
+        ],
+
     ],
 
     /*

@@ -489,84 +489,21 @@
                     <div class="blog-swiper-style-one">
                         <div class="swiper mySwiper-blog-one">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="/">
-                                            <h4 class="title">Building a Brand That from Market Leaders</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="/" class="thumbnail">
-                                                <img loading="lazy" src="assets/images/blog/01.webp" alt="blog-area">
+                                @foreach($recentBlogPosts ?? [] as $post)
+                                    <div class="swiper-slide">
+                                        <div class="single-blog-area-one">
+                                            <p>{{ $post->category_name }} / <span>by {{ $post->author_name }}</span></p>
+                                            <a href="{{ $post->url }}">
+                                                <h4 class="title">{{ $post->post_title }}</h4>
                                             </a>
+                                            <div class="bottom-details">
+                                                <a href="{{ $post->url }}" class="thumbnail">
+                                                    <img loading="lazy" src="{{ filled($post->image_url) ? $post->image_url : asset($post->fallback_image) }}" alt="{{ $post->post_title }}">
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="/">
-                                            <h4 class="title">Transforming Your Best Of Approach to Business</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="/" class="thumbnail">
-                                                <img loading="lazy" src="assets/images/blog/02.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="/">
-                                            <h4 class="title">The quick settle tips of the new ages exist</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="/" class="thumbnail">
-                                                <img loading="lazy" src="assets/images/blog/03.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="/">
-                                            <h4 class="title">Building a Brand That from Market Leaders</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="/" class="thumbnail">
-                                                <img loading="lazy" src="assets/images/blog/01.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="/">
-                                            <h4 class="title">Transforming Your Best Of Approach to Business</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="/" class="thumbnail">
-                                                <img loading="lazy" src="assets/images/blog/02.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="single-blog-area-one">
-                                        <p>Business Solution / <span>by David Dolean</span></p>
-                                        <a href="/">
-                                            <h4 class="title">The quick settle tips of the new ages exist</h4>
-                                        </a>
-                                        <div class="bottom-details">
-                                            <a href="/" class="thumbnail">
-                                                <img loading="lazy" src="assets/images/blog/03.webp" alt="blog-area">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
