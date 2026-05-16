@@ -133,6 +133,7 @@
                             </ul>
                             <ul class="links margin-left-70">
                                 <li><a href="{{ route('quote') }}"><i class="far fa-arrow-right"></i> Get a Quote</a></li>
+                                <li><a href="https://www.hildes.io/blog"><i class="far fa-arrow-right"></i> Blog</a></li>
                                 <li><a href="{{ route('why-us.page') }}"><i class="far fa-arrow-right"></i> Why Us</a></li>
                                 <li><a href="{{ route('privacy.page') }}"><i class="far fa-arrow-right"></i> Privacy Policy</a></li>
                                 <li><a href="{{ route('terms.page') }}"><i class="far fa-arrow-right"></i> Terms &amp; Conditions</a></li>

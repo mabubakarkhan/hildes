@@ -112,7 +112,7 @@
             </div>
         </li>
         <li class="main-nav project-a-after">
-            <a href="/">Blog</a>
+            <a href="https://www.hildes.io/blog">Blog</a>
         </li>
         <li class="main-nav project-a-after">
             <a href="{{ route('contact') }}">Contact Us</a>
