@@ -1,9 +1,14 @@
 CONTROLLER
 - app/Http/Controllers/Frontend/LeadSubmissionController.php
 - app/Http/Controllers/Admin/LeadSubmissionController.php
+- app/Http/Controllers/SitemapController.php
 
 MODEL
 - app/Models/LeadSubmission.php
+
+SERVICES
+- app/Services/SitemapService.php
+- app/Services/WordPressSitemapService.php
 
 VIEWS (FRONTEND)
 - resources/views/frontend/careers.blade.php
@@ -14,6 +19,10 @@ VIEWS (ADMIN)
 
 ASSETS
 - public/theme/theme-lazy.css
+- public/robots.txt
+
+ROUTES
+- routes/web.php
 
 MIGRATION
 - database/migrations/2026_06_02_184500_add_resume_file_to_lead_submissions_table.php
@@ -25,3 +34,24 @@ ADD COLUMN `resume_file` VARCHAR(255) NULL AFTER `message`;
 LIVE SERVER COMMANDS (PREFERRED)
 - php artisan migrate
 - php artisan storage:link
+
+LIVE MIGRATION URL (IF NO SSH)
+1) Add to live .env:
+   MIGRATE_SECRET=hildes-live-migrate-20260602
+2) Open once in browser:
+   https://www.hildes.io/system/run-migrations/hildes-live-migrate-20260602
+3) After success, remove MIGRATE_SECRET from live .env
+
+LIVE SITEMAP NOTE
+- Delete old static file on server if present: public/sitemap.xml
+- Dynamic sitemap URL: https://www.hildes.io/sitemap.xml
+- Includes main site pages + WordPress blog posts, categories, tags
+
+LIVE SERVER .ENV (WORDPRESS BLOG DB — REQUIRED FOR DYNAMIC BLOG SITEMAP)
+WP_BLOG_DB_HOST=127.0.0.1
+WP_BLOG_DB_PORT=3306
+WP_BLOG_DB_DATABASE=hildes_blog
+WP_BLOG_DB_USERNAME=root
+WP_BLOG_DB_PASSWORD=
+WP_BLOG_DB_PREFIX=wp_
+WP_BLOG_BASE_URL=https://www.hildes.io/blog

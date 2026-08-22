@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\ContactSettingController;
+use App\Http\Controllers\Admin\SeoSettingController;
 use App\Http\Controllers\Admin\CaseStudyController;
 use App\Http\Controllers\Admin\CmsPageController;
 use App\Http\Controllers\Admin\ClientController;
@@ -21,8 +22,10 @@ use App\Http\Controllers\Frontend\NewsletterSubscriptionController;
 use App\Models\CaseStudy;
 use App\Models\CmsPage;
 use App\Http\Controllers\Frontend\CareerJobController;
+use App\Http\Controllers\SitemapController;
 use App\Models\Job;
 use App\Models\ServicePage;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Support\Facades\Route;
@@ -126,6 +129,7 @@ Route::middleware('auth')->group(function (): void {
     Route::prefix('admin')->name('admin.')->middleware('admin')->group(function (): void {
         Route::get('/dashboard', DashboardController::class)->name('dashboard');
         Route::resource('contact-settings', ContactSettingController::class)->only(['index', 'update']);
+        Route::resource('seo-settings', SeoSettingController::class)->only(['index', 'update']);
         Route::post('case-studies/upload-detail-image', [CaseStudyController::class, 'uploadDetailImage'])->name('case-studies.upload-detail-image');
         Route::get('case-studies/order', [CaseStudyController::class, 'order'])->name('case-studies.order');
         Route::put('case-studies/order', [CaseStudyController::class, 'updateOrder'])->name('case-studies.order.update');
@@ -176,6 +180,8 @@ Route::post('/lead-submissions', [LeadSubmissionController::class, 'store'])
 Route::post('/newsletter-subscriptions', [NewsletterSubscriptionController::class, 'store'])
     ->middleware('throttle:20,1')
     ->name('newsletter-subscriptions.store');
+
+Route::get('/sitemap.xml', SitemapController::class)->name('sitemap');
 
 Route::get('/case-studies', function () {
     $caseStudies = CaseStudy::query()
@@ -616,6 +622,30 @@ Route::post('/careers/{job}/apply', [CareerJobController::class, 'apply'])
     ->where('job', '[A-Za-z0-9\-]+')
     ->middleware('throttle:15,1')
     ->name('careers.job.apply');
+
+Route::get('/system/run-migrations/{token}', function (string $token) {
+    $secret = (string) env('MIGRATE_SECRET', '');
+    if ($secret === '' || ! hash_equals($secret, $token)) {
+        abort(404);
+    }
+
+    Artisan::call('migrate', ['--force' => true]);
+
+    return response('<pre>'.e(Artisan::output()).'</pre>', 200)
+        ->header('Content-Type', 'text/html; charset=UTF-8');
+})->middleware('throttle:5,1');
+
+Route::get('/system/clear-cache/{token}', function (string $token) {
+    $secret = (string) env('MIGRATE_SECRET', '');
+    if ($secret === '' || ! hash_equals($secret, $token)) {
+        abort(404);
+    }
+
+    Artisan::call('optimize:clear');
+
+    return response('<pre>'.e(Artisan::output()).'</pre>', 200)
+        ->header('Content-Type', 'text/html; charset=UTF-8');
+})->middleware('throttle:5,1');
 
 Route::get('/{slug}', function (string $slug) {
     $service = ServicePage::query()

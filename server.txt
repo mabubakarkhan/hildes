@@ -1,0 +1,27 @@
+LIVE
+hildes.io
+
+FTP:
+FTP Username: hildes_io@hildes.io
+FTP server: ftp.mubashirahmed.com
+FTP password: d?ilX)K3PW*O]PFZ
+FTP & explicit FTPS port:  21
+
+
+Main DB:
+DB_CONNECTION=mysql
+DB_HOST=localhost
+DB_PORT=3306
+DB_DATABASE=rivellte_hildes_io
+DB_USERNAME=rivellte_hildes_io
+DB_PASSWORD=_jxE6ZTDzhgOrX@0
+
+Blog DB:
+WP_BLOG_DB_HOST=127.0.0.1
+WP_BLOG_DB_PORT=3306
+WP_BLOG_DB_DATABASE=rivellte_hildes_blog
+WP_BLOG_DB_USERNAME=rivellte_hildes_blog
+WP_BLOG_DB_PASSWORD=VDBy+0%=Ac,0.vEM
+WP_BLOG_DB_PREFIX=wp_
+WP_BLOG_BASE_URL=https://www.hildes.io/blog
+WP_BLOG_RECENT_LIMIT=10

@@ -609,6 +609,7 @@
             <a href="{{ route('admin.dashboard') }}" class="menu-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}"><span class="menu-icon">D</span> Dashboard</a>
             <a href="{{ route('admin.home-hero.index') }}" class="menu-item {{ request()->routeIs('admin.home-hero.*') ? 'active' : '' }}"><span class="menu-icon">H</span> Home hero</a>
             <a href="{{ route('admin.contact-settings.index') }}" class="menu-item {{ request()->routeIs('admin.contact-settings.*') ? 'active' : '' }}"><span class="menu-icon">C</span> Contact Settings</a>
+            <a href="{{ route('admin.seo-settings.index') }}" class="menu-item {{ request()->routeIs('admin.seo-settings.*') ? 'active' : '' }}"><span class="menu-icon">SEO</span> SEO Settings</a>
             <a href="{{ route('admin.services.index') }}" class="menu-item {{ request()->routeIs('admin.services.*') ? 'active' : '' }}"><span class="menu-icon">S</span> Services</a>
             <a href="{{ route('admin.case-studies.index') }}" class="menu-item {{ request()->routeIs('admin.case-studies.*') ? 'active' : '' }}"><span class="menu-icon">CS</span> Case Studies</a>
             <a href="{{ route('admin.clients.index') }}" class="menu-item {{ request()->routeIs('admin.clients.*') ? 'active' : '' }}"><span class="menu-icon">CL</span> Clients</a>

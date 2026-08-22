@@ -1389,13 +1389,6 @@ img:not(.is-lazy) {
   object-fit: contain;
 }
 
-/* Service detail: keep document as scroll root for wheel smooth-scroll */
-.service-page-detail,
-.service-page-detail .service-details-left-area,
-.service-page-detail .case-study-contact-wrap {
-  overflow: visible;
-}
-
 /* Service details page styling */
 .rts-service-details-area-main-bottom {
   position: relative;

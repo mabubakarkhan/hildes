@@ -16,12 +16,15 @@
     <meta property="og:site_name" content="{{ $ogSiteName ?? 'HilDes' }}">
     @if(!empty($ogImage))
         <meta property="og:image" content="{{ $ogImage }}">
+        <meta property="og:image:secure_url" content="{{ $ogImage }}">
+        <meta property="og:image:alt" content="{{ $ogImageAlt ?? ($ogTitle ?? $metaTitle) }}">
     @endif
     <meta name="twitter:card" content="{{ $twitterCard ?? 'summary_large_image' }}">
     <meta name="twitter:title" content="{{ $twitterTitle ?? ($metaTitle ?? 'HilDes - Technology Services') }}">
     <meta name="twitter:description" content="{{ $twitterDescription ?? ($metaDescription ?? 'HilDes technology and digital services.') }}">
     @if(!empty($twitterImage))
         <meta name="twitter:image" content="{{ $twitterImage }}">
+        <meta name="twitter:image:alt" content="{{ $ogImageAlt ?? ($twitterTitle ?? $metaTitle) }}">
     @endif
     @if(filled($schemaJson ?? null))
         <script type="application/ld+json">{!! $schemaJson !!}</script>
@@ -59,7 +62,6 @@
     <script defer src="{{ asset('assets/js/plugins/gsap.js') }}"></script>
     <script defer src="{{ asset('assets/js/plugins/split-text.js') }}"></script>
     <script defer src="{{ asset('assets/js/plugins/scroll-trigger.js') }}"></script>
-    <script defer src="{{ asset('assets/js/plugins/smooth-scroll.js') }}"></script>
     <script defer src="{{ asset('assets/js/plugins/metismenu.js') }}"></script>
     <script defer src="{{ asset('assets/js/plugins/popup.js') }}"></script>
     <script defer src="{{ asset('assets/js/vendor/bootstrap.min.js') }}"></script>
@@ -68,6 +70,7 @@
     <script defer src="{{ asset('assets/js/vendor/waw.js') }}"></script>
     <script defer src="{{ asset('assets/js/main.js') }}"></script>
     <script defer src="{{ asset('theme/theme-lazy.js') }}"></script>
+    <script defer src="{{ asset('assets/js/plugins/smooth-scroll.js') }}"></script>
     @stack('scripts')
 </body>
 </html>

@@ -7,6 +7,7 @@ use App\Models\CaseStudy;
 use App\Models\Client;
 use App\Models\HomeHeroSetting;
 use App\Models\HomeHeroSlide;
+use App\Models\SeoSetting;
 use App\Models\ServicePage;
 use App\Models\Testimonial;
 use App\Services\WordPressRecentPostsService;
@@ -154,6 +155,42 @@ class AppServiceProvider extends ServiceProvider
                 'recentBlogPosts',
                 app(WordPressRecentPostsService::class)->getRecent()
             );
+        });
+
+        View::composer('frontend.layouts.app', function ($view): void {
+            $defaults = SeoSetting::getSingleton();
+            $data = $view->getData();
+
+            $merge = function (string $key, mixed $default) use ($data): mixed {
+                $value = $data[$key] ?? null;
+
+                return filled($value) ? $value : $default;
+            };
+
+            $metaTitle = $merge('metaTitle', $defaults->default_meta_title);
+            $metaDescription = $merge('metaDescription', $defaults->default_meta_description);
+
+            $siteOgImage = $defaults->defaultOgImageUrl();
+            $siteTwitterImage = $defaults->defaultTwitterImageUrl() ?? $siteOgImage;
+            $ogImage = SeoSetting::resolveShareImageUrl($data['ogImage'] ?? null) ?? $siteOgImage;
+            $twitterImage = SeoSetting::resolveShareImageUrl($data['twitterImage'] ?? null) ?? $siteTwitterImage ?? $ogImage;
+
+            $view->with([
+                'metaTitle' => $metaTitle,
+                'metaDescription' => $metaDescription,
+                'metaKeywords' => $merge('metaKeywords', $defaults->default_meta_keywords),
+                'metaAuthor' => $merge('metaAuthor', $defaults->default_meta_author),
+                'metaRobots' => $merge('metaRobots', $defaults->default_robots_directive),
+                'ogType' => $merge('ogType', $defaults->default_og_type),
+                'ogSiteName' => $merge('ogSiteName', $defaults->og_site_name),
+                'twitterCard' => $merge('twitterCard', $defaults->twitter_card),
+                'ogImage' => $ogImage,
+                'twitterImage' => $twitterImage,
+                'ogTitle' => $merge('ogTitle', $metaTitle),
+                'ogDescription' => $merge('ogDescription', $metaDescription),
+                'twitterTitle' => $merge('twitterTitle', $metaTitle),
+                'twitterDescription' => $merge('twitterDescription', $metaDescription),
+            ]);
         });
     }
 }

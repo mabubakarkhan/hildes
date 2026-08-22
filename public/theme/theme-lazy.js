@@ -236,3 +236,53 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+(function () {
+  if (!document.querySelector(".service-page-detail")) {
+    return;
+  }
+
+  let refreshTimer = null;
+  const refreshServiceSmoothScroll = function () {
+    window.clearTimeout(refreshTimer);
+    refreshTimer = window.setTimeout(function () {
+      if (typeof window.SmoothScroll !== "function") {
+        return;
+      }
+
+      window.SmoothScroll({
+        animationTime: 700,
+        stepSize: 90,
+        accelerationMax: 2,
+        fixedBackground: false,
+      });
+
+      if (typeof window.SmoothScroll.reinit === "function") {
+        window.SmoothScroll.reinit();
+      } else if (typeof window.SmoothScroll.refresh === "function") {
+        window.SmoothScroll.refresh();
+      } else {
+        window.dispatchEvent(new Event("resize"));
+      }
+    }, 100);
+  };
+
+  window.addEventListener("load", function () {
+    refreshServiceSmoothScroll();
+    window.setTimeout(refreshServiceSmoothScroll, 500);
+    window.setTimeout(refreshServiceSmoothScroll, 1500);
+  });
+
+  document.querySelectorAll("img").forEach(function (img) {
+    if (!img.complete) {
+      img.addEventListener("load", refreshServiceSmoothScroll, { once: true });
+    }
+  });
+
+  if ("ResizeObserver" in window) {
+    var pageRoot = document.querySelector(".service-page-detail");
+    if (pageRoot) {
+      new ResizeObserver(refreshServiceSmoothScroll).observe(pageRoot);
+    }
+  }
+})();
+

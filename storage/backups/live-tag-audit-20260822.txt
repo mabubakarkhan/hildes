@@ -1,0 +1,306 @@
+=== TAG AUDIT (read-only) ===
+Total tags: 102
+Tags with count 1: 75
+Tags with count 2: 16
+
+term_id count  slug                                      name
+------------------------------------------------------------------------------------------
+82      1      agile-development                         Agile Development
+4       1      ai                                        AI
+107     1      ai-app-rescue                             AI app rescue
+77      1      ai-consulting                             AI Consulting
+62      1      ai-for-business                           AI for Business
+35      1      ai-for-startups                           AI for Startups
+114     1      ai-hiring                                 AI hiring
+105     1      ai-saas                                   AI SaaS
+65      1      ai-technology                             AI Technology
+46      1      android-development                       Android Development
+71      1      api-development                           API Development
+24      1      api-integrations                          API Integrations
+108     1      app-debugging                             app debugging
+113     1      ats                                       ATS
+27      1      build-mvp                                 Build MVP
+48      1      business-apps                             Business Apps
+55      1      business-growth-through-technology        Business Growth Through Technology
+73      1      business-innovation                       Business Innovation
+66      1      business-intelligence                     Business Intelligence
+69      1      business-productivity                     Business Productivity
+74      1      business-software                         Business Software
+101     1      cloud-applications                        Cloud Applications
+25      1      cloud-devops                              Cloud DevOps
+96      1      cloud-software-development                Cloud Software Development
+91      1      crm                                       CRM
+43      1      cross-platform-development                Cross Platform Development
+68      1      customer-experience                       Customer Experience
+85      1      development-workflow                      Development Workflow
+88      1      devops                                    DevOps
+57      1      digital-growth                            Digital Growth
+75      1      digital-innovation                        Digital Innovation
+87      1      enterests                                 Enterests
+36      1      enterprise-automation                     Enterprise Automation
+99      1      enterprise-saas                           Enterprise SaaS
+72      1      enterprise-software                       Enterprise Software
+89      1      erp-development                           ERP Development
+44      1      flutter-development                       Flutter Development
+76      1      future-of-ai                              Future of AI
+64      1      generative-ai                             Generative AI
+61      1      how-to-use-ai-for-your-business           How to Use AI for Your Business
+112     1      hr-tech                                   HR-tech
+42      1      hybrid-mobile-app-development             Hybrid Mobile App Development
+41      1      hybrid-mobile-apps                        Hybrid Mobile Apps
+63      1      intelligent-automation                    Intelligent Automation
+47      1      ios-development                           iOS Development
+19      1      lean-startup                              Lean Startup
+13      1      minimum-viable-product                    Minimum Viable Product
+51      1      mobile-technology                         Mobile Technology
+100     1      multi-tenant-saas                         Multi-Tenant SaaS
+67      1      predictive-analytics                      Predictive Analytics
+17      1      product-launch                            Product Launch
+15      1      product-validation                        Product Validation
+81      1      project-management-software               Project Management Software
+93      1      project-planning                          Project Planning
+84      1      project-tracking                          Project Tracking
+45      1      react-native                              React Native
+111     1      recruiting-software                       recruiting software
+109     1      saas                                      SaaS
+98      1      saas-application-development              SaaS Application Development
+102     1      saas-architecture                         SaaS Architecture
+104     1      saas-development-services                 SaaS Development Services
+97      1      saas-platform-development                 SaaS Platform Development
+103     1      saas-security                             SaaS Security
+50      1      scalable-applications                     Scalable Applications
+95      1      software-as-a-service                     Software as a Service
+86      1      software-collaboration                    Software Collaboration
+92      1      software-company                          Software Company
+83      1      software-development-process              Software Development Process
+80      1      software-project-management-system        Software Project Management System
+26      1      startup-mvp                               Startup MVP
+106     1      startup-saas                              Startup SaaS
+18      1      startup-strategy                          Startup Strategy
+56      1      technology-innovation                     Technology Innovation
+38      1      technology-trends                         Technology Trends
+90      1      web-development                           Web Development
+7       2      ai-agents                                 AI Agents
+32      2      ai-integration                            AI Integration
+30      2      ai-solutions                              AI Solutions
+60      2      api-integration                           API Integration
+37      2      business-growth                           Business Growth
+70      2      cloud-computing                           Cloud Computing
+59      2      cloud-infrastructure                      Cloud Infrastructure
+58      2      custom-web-development                    Custom Web Development
+10      2      machine-learning                          Machine Learning
+33      2      process-automation                        Process Automation
+34      2      smart-business-solutions                  Smart Business Solutions
+14      2      startup-development                       Startup Development
+49      2      technology-solutions                      Technology Solutions
+23      2      ui-ux-design                              UI UX Design
+21      2      web-application-development               Web Application Development
+29      2      workflow-automation                       Workflow Automation
+39      3      ai-development                            AI Development
+5       3      artificial-intelligence                   Artificial Intelligence
+31      3      business-technology                       Business Technology
+12      3      mvp-development                           MVP Development
+20      3      software-development                      Software Development
+6       4      ai-automation                             AI Automation
+8       5      business-automation                       Business Automation
+22      5      mobile-app-development                    Mobile App Development
+28      6      hildes                                    HilDes
+16      6      saas-development                          SaaS Development
+9       7      digital-transformation                    Digital Transformation
+
+=== MERGE CANDIDATES (count <= 2) ===
+82	1	agile-development	Agile Development
+4	1	ai	AI
+107	1	ai-app-rescue	AI app rescue
+77	1	ai-consulting	AI Consulting
+62	1	ai-for-business	AI for Business
+35	1	ai-for-startups	AI for Startups
+114	1	ai-hiring	AI hiring
+105	1	ai-saas	AI SaaS
+65	1	ai-technology	AI Technology
+46	1	android-development	Android Development
+71	1	api-development	API Development
+24	1	api-integrations	API Integrations
+108	1	app-debugging	app debugging
+113	1	ats	ATS
+27	1	build-mvp	Build MVP
+48	1	business-apps	Business Apps
+55	1	business-growth-through-technology	Business Growth Through Technology
+73	1	business-innovation	Business Innovation
+66	1	business-intelligence	Business Intelligence
+69	1	business-productivity	Business Productivity
+74	1	business-software	Business Software
+101	1	cloud-applications	Cloud Applications
+25	1	cloud-devops	Cloud DevOps
+96	1	cloud-software-development	Cloud Software Development
+91	1	crm	CRM
+43	1	cross-platform-development	Cross Platform Development
+68	1	customer-experience	Customer Experience
+85	1	development-workflow	Development Workflow
+88	1	devops	DevOps
+57	1	digital-growth	Digital Growth
+75	1	digital-innovation	Digital Innovation
+87	1	enterests	Enterests
+36	1	enterprise-automation	Enterprise Automation
+99	1	enterprise-saas	Enterprise SaaS
+72	1	enterprise-software	Enterprise Software
+89	1	erp-development	ERP Development
+44	1	flutter-development	Flutter Development
+76	1	future-of-ai	Future of AI
+64	1	generative-ai	Generative AI
+61	1	how-to-use-ai-for-your-business	How to Use AI for Your Business
+112	1	hr-tech	HR-tech
+42	1	hybrid-mobile-app-development	Hybrid Mobile App Development
+41	1	hybrid-mobile-apps	Hybrid Mobile Apps
+63	1	intelligent-automation	Intelligent Automation
+47	1	ios-development	iOS Development
+19	1	lean-startup	Lean Startup
+13	1	minimum-viable-product	Minimum Viable Product
+51	1	mobile-technology	Mobile Technology
+100	1	multi-tenant-saas	Multi-Tenant SaaS
+67	1	predictive-analytics	Predictive Analytics
+17	1	product-launch	Product Launch
+15	1	product-validation	Product Validation
+81	1	project-management-software	Project Management Software
+93	1	project-planning	Project Planning
+84	1	project-tracking	Project Tracking
+45	1	react-native	React Native
+111	1	recruiting-software	recruiting software
+109	1	saas	SaaS
+98	1	saas-application-development	SaaS Application Development
+102	1	saas-architecture	SaaS Architecture
+104	1	saas-development-services	SaaS Development Services
+97	1	saas-platform-development	SaaS Platform Development
+103	1	saas-security	SaaS Security
+50	1	scalable-applications	Scalable Applications
+95	1	software-as-a-service	Software as a Service
+86	1	software-collaboration	Software Collaboration
+92	1	software-company	Software Company
+83	1	software-development-process	Software Development Process
+80	1	software-project-management-system	Software Project Management System
+26	1	startup-mvp	Startup MVP
+106	1	startup-saas	Startup SaaS
+18	1	startup-strategy	Startup Strategy
+56	1	technology-innovation	Technology Innovation
+38	1	technology-trends	Technology Trends
+90	1	web-development	Web Development
+7	2	ai-agents	AI Agents
+32	2	ai-integration	AI Integration
+30	2	ai-solutions	AI Solutions
+60	2	api-integration	API Integration
+37	2	business-growth	Business Growth
+70	2	cloud-computing	Cloud Computing
+59	2	cloud-infrastructure	Cloud Infrastructure
+58	2	custom-web-development	Custom Web Development
+10	2	machine-learning	Machine Learning
+33	2	process-automation	Process Automation
+34	2	smart-business-solutions	Smart Business Solutions
+14	2	startup-development	Startup Development
+49	2	technology-solutions	Technology Solutions
+23	2	ui-ux-design	UI UX Design
+21	2	web-application-development	Web Application Development
+29	2	workflow-automation	Workflow Automation
+
+=== PROPOSED MERGE GROUPS (review before approval) ===
+
+[AI & automation] → canonical suggestion: pick highest-count slug in group
+  Found: ai (1), ai-agents (2), ai-app-rescue (1), ai-automation (4), ai-consulting (1), ai-development (3), ai-for-business (1), ai-for-startups (1), ai-hiring (1), ai-integration (2), ai-solutions (2), ai-technology (1), artificial-intelligence (3), machine-learning (2), generative-ai (1)
+
+[SaaS & MVP] → canonical suggestion: pick highest-count slug in group
+  Found: saas (1), saas-development (6), mvp-development (3)
+
+[Software & web development] → canonical suggestion: pick highest-count slug in group
+  Found: software-development (3), web-development (1), mobile-app-development (5), api-development (1)
+
+[Business & growth] → canonical suggestion: pick highest-count slug in group
+  Found: business-growth (2), digital-transformation (7)
+
+[HR & recruiting] → canonical suggestion: pick highest-count slug in group
+  Found: hr-tech (1)
+
+[Project & product management] → canonical suggestion: pick highest-count slug in group
+  Found: agile-development (1)
+
+[Cloud & DevOps] → canonical suggestion: pick highest-count slug in group
+  Found: cloud-computing (2), devops (1)
+
+[Technology general] → canonical suggestion: pick highest-count slug in group
+  Found: technology-innovation (1)
+
+[UNGROUPED — needs manual review]
+  ai-saas (1) — AI SaaS
+  android-development (1) — Android Development
+  api-integrations (1) — API Integrations
+  app-debugging (1) — app debugging
+  ats (1) — ATS
+  build-mvp (1) — Build MVP
+  business-apps (1) — Business Apps
+  business-growth-through-technology (1) — Business Growth Through Technology
+  business-innovation (1) — Business Innovation
+  business-intelligence (1) — Business Intelligence
+  business-productivity (1) — Business Productivity
+  business-software (1) — Business Software
+  cloud-applications (1) — Cloud Applications
+  cloud-devops (1) — Cloud DevOps
+  cloud-software-development (1) — Cloud Software Development
+  crm (1) — CRM
+  cross-platform-development (1) — Cross Platform Development
+  customer-experience (1) — Customer Experience
+  development-workflow (1) — Development Workflow
+  digital-growth (1) — Digital Growth
+  digital-innovation (1) — Digital Innovation
+  enterests (1) — Enterests
+  enterprise-automation (1) — Enterprise Automation
+  enterprise-saas (1) — Enterprise SaaS
+  enterprise-software (1) — Enterprise Software
+  erp-development (1) — ERP Development
+  flutter-development (1) — Flutter Development
+  future-of-ai (1) — Future of AI
+  how-to-use-ai-for-your-business (1) — How to Use AI for Your Business
+  hybrid-mobile-app-development (1) — Hybrid Mobile App Development
+  hybrid-mobile-apps (1) — Hybrid Mobile Apps
+  intelligent-automation (1) — Intelligent Automation
+  ios-development (1) — iOS Development
+  lean-startup (1) — Lean Startup
+  minimum-viable-product (1) — Minimum Viable Product
+  mobile-technology (1) — Mobile Technology
+  multi-tenant-saas (1) — Multi-Tenant SaaS
+  predictive-analytics (1) — Predictive Analytics
+  product-launch (1) — Product Launch
+  product-validation (1) — Product Validation
+  project-management-software (1) — Project Management Software
+  project-planning (1) — Project Planning
+  project-tracking (1) — Project Tracking
+  react-native (1) — React Native
+  recruiting-software (1) — recruiting software
+  saas-application-development (1) — SaaS Application Development
+  saas-architecture (1) — SaaS Architecture
+  saas-development-services (1) — SaaS Development Services
+  saas-platform-development (1) — SaaS Platform Development
+  saas-security (1) — SaaS Security
+  scalable-applications (1) — Scalable Applications
+  software-as-a-service (1) — Software as a Service
+  software-collaboration (1) — Software Collaboration
+  software-company (1) — Software Company
+  software-development-process (1) — Software Development Process
+  software-project-management-system (1) — Software Project Management System
+  startup-mvp (1) — Startup MVP
+  startup-saas (1) — Startup SaaS
+  startup-strategy (1) — Startup Strategy
+  technology-trends (1) — Technology Trends
+  api-integration (2) — API Integration
+  cloud-infrastructure (2) — Cloud Infrastructure
+  custom-web-development (2) — Custom Web Development
+  process-automation (2) — Process Automation
+  smart-business-solutions (2) — Smart Business Solutions
+  startup-development (2) — Startup Development
+  technology-solutions (2) — Technology Solutions
+  ui-ux-design (2) — UI UX Design
+  web-application-development (2) — Web Application Development
+  workflow-automation (2) — Workflow Automation
+  business-technology (3) — Business Technology
+  business-automation (5) — Business Automation
+  hildes (6) — HilDes
+
+=== RankMath titles option (inspect for tag noindex key) ===
+RankMath titles option not found or not array.
