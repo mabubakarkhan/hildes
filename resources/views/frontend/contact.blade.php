@@ -2,6 +2,7 @@
 
 @php
     $contact = $contact ?? \App\Models\ContactSetting::query()->firstOrCreate([]);
+    $isCareerResumeFlow = request()->query('from') === 'careers';
 @endphp
 
 @section('content')
@@ -65,9 +66,9 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="contact-form-p">
-                        <form class="form__content" method="POST" action="{{ route('lead-submissions.store') }}" data-ajax-lead-form>
+                        <form class="form__content" method="POST" action="{{ route('lead-submissions.store') }}" data-ajax-lead-form enctype="multipart/form-data">
                             @csrf
-                            <input type="hidden" name="source" value="contact">
+                            <input type="hidden" name="source" value="{{ $isCareerResumeFlow ? 'career_resume' : 'contact' }}">
                             <h4 class="title">Get In Touch</h4>
                             <input name="full_name" type="text" value="{{ old('full_name') }}" placeholder="Full Name" autocomplete="name">
                             <input name="company_name" type="text" value="{{ old('company_name') }}" placeholder="Company Name" autocomplete="organization">
@@ -75,6 +76,21 @@
                             <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="Phone / WhatsApp" autocomplete="tel">
                             <input type="text" name="subject" value="{{ old('subject') }}" placeholder="Subject">
                             <textarea name="message" placeholder="Tell us about your project requirements">{{ old('message') }}</textarea>
+                            @if($isCareerResumeFlow)
+                                <div class="hildes-careers-resume-dropzone-wrap">
+                                    <div class="job-apply-dropzone" data-careers-resume-dropzone>
+                                        <input id="contact-resume-file" class="job-apply-dropzone__input-native" type="file" name="resume_file" accept=".pdf,.doc,.docx,application/pdf" required>
+                                        <label for="contact-resume-file" class="job-apply-dropzone__label-hit">
+                                            <span class="job-apply-dropzone__ui">
+                                                <span class="job-apply-dropzone__icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                                                <span class="job-apply-dropzone__line"><strong>Click to upload</strong> or drag and drop</span>
+                                                <span class="job-apply-dropzone__hint">Resume (PDF, DOC, DOCX) · max 5MB</span>
+                                                <span class="job-apply-dropzone__name" data-careers-resume-filename hidden></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            @endif
                             <p class="hildes-ajax-form-status" data-form-status aria-live="polite"></p>
                             <button class="rts-btn btn-primary" type="submit" data-submit-label="Send Message"><span class="hildes-ajax-btn-text">Send Message</span></button>
                         </form>
@@ -132,3 +148,58 @@
         @endif
     </div>
 @endsection
+
+@if($isCareerResumeFlow)
+    @push('scripts')
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var form = document.querySelector('form[data-ajax-lead-form]');
+                if (!form) return;
+                var input = form.querySelector('#contact-resume-file');
+                var dropzone = form.querySelector('[data-careers-resume-dropzone]');
+                var fileNameEl = form.querySelector('[data-careers-resume-filename]');
+                if (!input || !dropzone || !fileNameEl) return;
+
+                function updateFileName() {
+                    var file = input.files && input.files[0];
+                    if (file) {
+                        fileNameEl.textContent = file.name;
+                        fileNameEl.hidden = false;
+                    } else {
+                        fileNameEl.textContent = '';
+                        fileNameEl.hidden = true;
+                    }
+                }
+
+                input.addEventListener('change', updateFileName);
+                form.addEventListener('reset', function () {
+                    setTimeout(function () {
+                        dropzone.classList.remove('job-apply-dropzone--active');
+                        updateFileName();
+                    }, 0);
+                });
+
+                ['dragenter', 'dragover'].forEach(function (eventName) {
+                    dropzone.addEventListener(eventName, function (event) {
+                        event.preventDefault();
+                        dropzone.classList.add('job-apply-dropzone--active');
+                    });
+                });
+
+                ['dragleave', 'drop'].forEach(function (eventName) {
+                    dropzone.addEventListener(eventName, function (event) {
+                        event.preventDefault();
+                        dropzone.classList.remove('job-apply-dropzone--active');
+                    });
+                });
+
+                dropzone.addEventListener('drop', function (event) {
+                    var files = event.dataTransfer && event.dataTransfer.files;
+                    if (!files || !files.length) return;
+                    input.files = files;
+                    updateFileName();
+                });
+            });
+        </script>
+    @endpush
+@endif

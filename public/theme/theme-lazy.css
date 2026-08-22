@@ -2770,6 +2770,82 @@ img:not(.is-lazy) {
   max-width: 100%;
 }
 
+.contact-page-view .hildes-careers-resume-dropzone-wrap {
+  margin: 12px 0 8px;
+}
+
+.contact-page-view .job-apply-dropzone {
+  position: relative;
+  border: 1px dashed rgba(255, 255, 255, 0.24);
+  border-radius: 14px;
+  padding: 0;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.04), rgba(255, 106, 0, 0.08));
+  min-height: 146px;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.contact-page-view .job-apply-dropzone--active {
+  border-color: rgba(255, 106, 0, 0.85);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 106, 0, 0.16));
+  box-shadow: 0 0 0 3px rgba(255, 106, 0, 0.12);
+  transform: translateY(-1px);
+}
+
+.contact-page-view .job-apply-dropzone__input-native {
+  display: none !important;
+}
+
+.contact-page-view .job-apply-dropzone__label-hit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  cursor: pointer;
+  min-height: 146px;
+  padding: 18px 16px;
+}
+
+.contact-page-view .job-apply-dropzone__ui {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.contact-page-view .job-apply-dropzone__icon {
+  font-size: 28px;
+  color: #111111;
+  line-height: 1;
+}
+
+.contact-page-view .job-apply-dropzone__line {
+  display: block;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #111111;
+}
+
+.contact-page-view .job-apply-dropzone__hint {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  color: #111111;
+}
+
+.contact-page-view .job-apply-dropzone__name {
+  display: block;
+  margin: 2px 0 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #111111;
+  word-break: break-word;
+  max-width: 100%;
+}
+
 .hildes-job-detail-page .case-study-contact-form input.is-invalid,
 .hildes-job-detail-page .case-study-contact-form textarea.is-invalid,
 .hildes-job-detail-page .case-study-contact-form select.is-invalid {

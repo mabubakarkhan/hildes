@@ -1,0 +1,27 @@
+CONTROLLER
+- app/Http/Controllers/Frontend/LeadSubmissionController.php
+- app/Http/Controllers/Admin/LeadSubmissionController.php
+
+MODEL
+- app/Models/LeadSubmission.php
+
+VIEWS (FRONTEND)
+- resources/views/frontend/careers.blade.php
+- resources/views/frontend/contact.blade.php
+
+VIEWS (ADMIN)
+- resources/views/admin/lead-submissions/index.blade.php
+
+ASSETS
+- public/theme/theme-lazy.css
+
+MIGRATION
+- database/migrations/2026_06_02_184500_add_resume_file_to_lead_submissions_table.php
+
+LIVE SERVER SQL (IF NOT RUNNING MIGRATION)
+ALTER TABLE `lead_submissions`
+ADD COLUMN `resume_file` VARCHAR(255) NULL AFTER `message`;
+
+LIVE SERVER COMMANDS (PREFERRED)
+- php artisan migrate
+- php artisan storage:link

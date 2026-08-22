@@ -9,6 +9,7 @@
                     <th class="p-3 text-left">Phone</th>
                     <th class="p-3 text-left">Subject</th>
                     <th class="p-3 text-left">Message</th>
+                    <th class="p-3 text-left">Resume</th>
                     <th class="p-3 text-left">Date</th>
                     <th class="p-3">Action</th>
                 </tr>
@@ -17,11 +18,18 @@
             @foreach($submissions as $submission)
                 <tr class="border-t border-slate-800">
                     <td class="p-3">{{ $submission->full_name }}</td>
-                    <td class="p-3">{{ ucfirst($submission->source) }}</td>
+                    <td class="p-3">{{ $submission->source === 'career_resume' ? 'Career Resume' : ucfirst($submission->source) }}</td>
                     <td class="p-3">{{ $submission->email }}</td>
                     <td class="p-3">{{ $submission->phone ?: '-' }}</td>
                     <td class="p-3">{{ $submission->subject ?: '-' }}</td>
                     <td class="p-3">{{ \Illuminate\Support\Str::limit((string) $submission->message, 120) ?: '-' }}</td>
+                    <td class="p-3">
+                        @if($submission->resume_file)
+                            <a href="{{ asset('storage/'.$submission->resume_file) }}" target="_blank" rel="noopener noreferrer" class="text-primary-400 underline">View Resume</a>
+                        @else
+                            -
+                        @endif
+                    </td>
                     <td class="p-3">{{ $submission->created_at?->format('d M Y h:i A') }}</td>
                     <td class="p-3 text-center">
                         <form method="POST" action="{{ route('admin.lead-submissions.destroy', $submission) }}" class="inline">

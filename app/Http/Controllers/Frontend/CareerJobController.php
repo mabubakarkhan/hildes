@@ -9,12 +9,16 @@ use App\Models\User;
 use App\Notifications\NewJobApplicationNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class CareerJobController extends Controller
 {
-    public function show(Job $job)
+    public function show(string $job)
     {
-        $this->authorizePublicJob($job);
+        $job = $this->resolvePublicJob($job);
+        abort_unless($job->status === 'open', 404);
+
+        $canApply = ! ($job->deadline && $job->deadline->isPast());
 
         $job->loadMissing('seoMeta');
         $seo = $job->seoMeta;
@@ -32,6 +36,7 @@ class CareerJobController extends Controller
 
         return view('frontend.job-detail', [
             'job' => $job,
+            'canApply' => $canApply,
             'metaTitle' => $seo?->meta_title ?: ($job->title.' | Careers | HilDes'),
             'metaDescription' => $metaDescription,
             'metaKeywords' => $seo?->meta_keywords ?: ($job->department.', '.$job->employment_type.', careers, HilDes'),
@@ -53,9 +58,10 @@ class CareerJobController extends Controller
         ]);
     }
 
-    public function apply(Request $request, Job $job)
+    public function apply(Request $request, string $job)
     {
-        $this->authorizePublicJob($job);
+        $job = $this->resolvePublicJob($job);
+        $this->authorizeJobApplication($job);
 
         $data = $request->validate([
             'full_name' => ['required', 'string', 'max:255'],
@@ -93,12 +99,29 @@ class CareerJobController extends Controller
             ->with('flash_application_success', true);
     }
 
-    private function authorizePublicJob(Job $job): void
+    private function authorizeJobApplication(Job $job): void
     {
         abort_unless($job->status === 'open', 404);
 
         if ($job->deadline && $job->deadline->isPast()) {
             abort(404);
         }
+    }
+
+    private function resolvePublicJob(string $jobParam): Job
+    {
+        $job = Job::query()
+            ->where('slug', $jobParam)
+            ->first();
+
+        if (! $job && ctype_digit($jobParam)) {
+            $job = Job::query()->find((int) $jobParam);
+        }
+
+        if (! $job) {
+            throw new NotFoundHttpException();
+        }
+
+        return $job;
     }
 }

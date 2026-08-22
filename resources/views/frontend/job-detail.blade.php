@@ -90,6 +90,7 @@
                     <aside class="case-study-contact-wrap" id="apply">
                         <div class="service-section-card service-section-card--b case-study-contact-inline">
                             <h3 class="title">Apply for this role</h3>
+                            @if($canApply ?? true)
                             <p class="case-study-contact-subtitle">Send your details and CV. We’ll get back to you if there’s a fit.</p>
 
                             <form id="job-apply-form" class="case-study-contact-form" method="post" action="{{ route('careers.job.apply', ['job' => $job->slug]) }}" enctype="multipart/form-data" novalidate>
@@ -152,6 +153,15 @@
                                     <span class="job-apply-btn-text">Submit application</span>
                                 </button>
                             </form>
+                            @else
+                            <p class="case-study-contact-subtitle mb--20">
+                                Applications for this role are closed.
+                                @if($job->deadline)
+                                    The deadline was <strong>{{ $job->deadline->format('j F Y') }}</strong>.
+                                @endif
+                                You can still <a href="{{ route('contact') }}">contact us</a> with your resume.
+                            </p>
+                            @endif
                         </div>
 
                         <div class="service-section-card service-section-card--b case-study-contact-inline hildes-job-detail-side-foot d-none d-lg-block mt-4">

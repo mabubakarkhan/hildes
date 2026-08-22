@@ -106,7 +106,7 @@
                             <strong class="hildes-careers-resume-cta__head">Don’t see the right role?</strong>
                             <p class="hildes-careers-resume-cta__text">We’re always looking for talented people. Send us your resume and we’ll keep you in mind for future opportunities.</p>
                         </div>
-                        <a href="{{ route('contact') }}" class="rts-btn btn-border hildes-careers-resume-cta__btn">Send your resume <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="{{ route('contact', ['from' => 'careers']) }}" class="rts-btn btn-border hildes-careers-resume-cta__btn">Send your resume <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                     </div>
                 @endif
             </div>

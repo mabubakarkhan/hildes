@@ -14,6 +14,7 @@ class LeadSubmission extends Model
         'phone',
         'subject',
         'message',
+        'resume_file',
         'status',
     ];
 }

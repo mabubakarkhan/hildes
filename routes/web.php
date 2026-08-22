@@ -609,8 +609,11 @@ Route::get('/careers', function () {
     ]);
 })->name('careers.page');
 
-Route::get('/careers/{job:slug}', [CareerJobController::class, 'show'])->name('careers.job.show');
-Route::post('/careers/{job:slug}/apply', [CareerJobController::class, 'apply'])
+Route::get('/careers/{job}', [CareerJobController::class, 'show'])
+    ->where('job', '[A-Za-z0-9\-]+')
+    ->name('careers.job.show');
+Route::post('/careers/{job}/apply', [CareerJobController::class, 'apply'])
+    ->where('job', '[A-Za-z0-9\-]+')
     ->middleware('throttle:15,1')
     ->name('careers.job.apply');
 
