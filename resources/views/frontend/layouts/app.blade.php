@@ -29,6 +29,7 @@
     @if(filled($schemaJson ?? null))
         <script type="application/ld+json">{!! $schemaJson !!}</script>
     @endif
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="C6+Fu3ZY55j3CruKSKTeBg" async></script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicon/favicon-32x32.png') }}">
